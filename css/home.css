@@ -1,0 +1,1722 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", serif;
+}
+body{
+    background-color: #F9FAFB;
+
+   
+}
+
+
+
+
+
+
+
+
+   .hero-home {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Rasio aspek untuk menjaga proporsi gambar */
+    margin-top: -25px;
+    background-image: url("../img/bgnew.png");
+    background-size: contain; /* Ganti cover menjadi contain */
+    background-repeat: no-repeat; /* Pastikan gambar tidak terulang */
+    background-position: center; /* Posisi gambar di tengah */
+    z-index: 999;
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    height: 660px;
+    margin-top: 3px;
+}
+.teks-hero{
+  display: flex;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45.36px;
+  color: #FFFFFF;
+  text-align: center;
+  height: 57px;
+  position: absolute; /* Menggunakan posisi absolut */
+  top: 367px; /* Menurunkan posisi pencarian */
+  left: 130px; /* Mengatur posisi ke kiri sesuai dengan permintaan */
+ 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    
+    border: 2px solid #b3c3dd; /* Warna outline */
+    border-radius: 25px; /* Sudut melengkung */
+    padding: 5px 15px;
+    width: 100%; /* Default width 100%, akan diatur ulang oleh media query */
+    max-width: 456px;
+    height: 57px;
+    position: absolute; /* Menggunakan posisi absolut */
+    top: calc(50% + 60px); /* Menurunkan posisi pencarian */
+    left: 65px; /* Mengatur posisi ke kiri sesuai dengan permintaan */
+    background-color: #f5f8fc; /* Warna latar belakang */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efek shadow */
+}
+
+.search-input {
+    flex: 1; /* Input menyesuaikan lebar */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.search-input::placeholder {
+    color: #b3c3dd; /* Warna placeholder */
+}
+
+.search-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button i {
+    font-size: 18px; /* Ukuran ikon */
+    color: #b3c3dd; /* Warna ikon */
+}
+
+
+
+
+
+
+
+
+/*
+.cat{
+  margin-top: 104px;
+  position: relative;
+  
+}
+.cat h1{
+  justify-content: center;
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37.8px;
+  color: #000000;
+  display: flex;
+
+}*/
+.kategori{
+  width: 1160px;
+  height: 113px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.kategori .tekscat h1{
+  justify-content: center;
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37.8px;
+  color: #000000;
+  display: flex;
+
+}
+.kategori .categ {
+  display: flex;
+  /* Agar item turun ke baris baru saat layar mengecil */
+  width: 100%;
+  gap: 10px; /* Jarak antar container */
+  justify-content: center; /* Pusatkan konten */
+}
+
+.kategori .categ .part {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row; /* Gambar dan teks sejajar (horizontal) pada layar besar */
+  justify-content: center;
+  align-items: center;
+  width: 123px; /* Lebar default */
+  height: 54px;
+  border-radius: 10px;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  gap: 5px; /* Jarak antara gambar dan teks */
+  cursor: pointer;
+  text-align: center;
+  padding: 5px; /* Memberi ruang pada konten */
+}
+
+.categ .part img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain; /* Pastikan gambar tetap proporsional */
+}
+
+.categ .part h1 {
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 500;
+  font-size: 12px; /* Ukuran teks default */
+  line-height: 14px;
+  color: #000000;
+  margin: 0; /* Hilangkan margin default */
+  text-align: left; /* Teks tetap sejajar kiri */
+  word-wrap: break-word; /* Bungkus teks jika terlalu panjang */
+}
+.part:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.part-link {
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: inherit; /* Memastikan warna teks tetap seperti sebelumnya */
+}
+
+.part-link:hover .part {
+  cursor: pointer; /* Memberikan efek kursor tangan saat hover */
+}
+
+
+
+
+
+.customer{
+  margin-top: 104px;
+  padding: 20px 0;
+}
+.customer .judulcus{
+  display: flex;
+  justify-content: center;
+}
+.customer .judulcus p{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37.8px;
+  color:#191F29;
+}
+.customer .carouselcutom{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 52px;
+  flex-wrap: wrap; 
+}
+.customer .carouselcutom img{
+  width: 158px;
+  height: 82px;
+  object-fit: contain; 
+}
+
+
+
+
+
+
+
+
+.bs{
+  margin-top: 104px;
+  background-image: url(../img/bgbs.png);
+  width: 100%;
+  height: auto; /* Pastikan tinggi menyesuaikan konten */
+  padding: 40px 0; /* Beri padding atas dan bawah */
+
+
+}
+.bs .judulbs {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.bs .judulbs p{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37.8px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.bs .produkbs{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.produks {
+  width: 193px;
+  height: auto;
+  /*box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+  /*overflow: hidden; /* Mencegah elemen keluar dari container */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.produks:hover{
+  transform: scale(1.1);
+}
+/* Gambar produk */
+.produks img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.nama-produk-category h2{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #111827;
+}
+.nama-produk-category{
+  height: 36px;
+}
+.harga-produk-category .price{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.26px;
+  color: #F59E0B;
+} 
+.diskon-produk-category{
+  display: flex;
+  gap: 5px;
+}
+.diskon-produk-category .original-price{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 500;
+  font-size: x-small;
+  line-height: small;
+  color:#D1D5DB;
+  text-decoration: line-through;
+}
+.diskon-produk-category .harga-persen{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 500;
+  font-size: x-small;
+  line-height: small;
+  color:#EF4444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.catalog{
+  width: 100%; /* Sesuaikan lebar untuk responsif */
+  max-width: 1127px; /* Batas maksimal */
+  height: auto; /* Tinggi otomatis */
+  margin-top: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px; /* Tambahkan padding untuk jarak */
+}
+.catalog .judulcatalog h1{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37.8px;
+  text-align: center;
+  margin-bottom: 52px;
+}
+.catalog .contencatalog{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+.contencatalog .imgcatalog{
+  width: 474px;
+  height: 474px;
+  background-color: #D9D9D9;
+  flex-shrink: 0;
+}
+.imgcatalog img{
+  width: 100%; /* Gambar menyesuaikan ukuran container */
+  height: auto; /* Tinggi proporsional */
+  object-fit: cover; /* Pastikan gambar proporsional */
+}
+.contencatalog .tekscatalog{
+  width: 100%; /* Responsif untuk layar kecil */
+  max-width: 562px; /* Batas maksimal */
+  
+}
+.contencatalog .tekscatalog p{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.2px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+
+.contencatalog .tekscatalog .buton-buton{
+  width: 100%; /* Responsif untuk layar kecil */
+  max-width: 562px; /* Batas maksimal */
+  height: 56px;
+  border-radius: 40px;
+  background-color: #0B1665;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.buton-buton:hover{
+  transform: scale(1.05);
+  
+}
+.contencatalog .tekscatalog .buton-buton p{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.aboutus {
+  width: 1127px;
+  height: auto;
+  margin-top: 104px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.aboutus .judulaboutus h1{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37.8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 52px;
+}
+.aboutus .contenabout{
+  display: flex;
+  gap: 70px;
+  align-items: center;
+
+}
+.aboutus .contenabout .imgabout img{
+  width: 430px;
+  height: 430px;
+}
+.aboutus .contenabout p{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.2px;
+  text-align: justify;
+  color: #000000;
+}
+.aboutus .contenabout span{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.porto {
+  width: 1127px;
+  height: 515px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 104px;
+  
+}
+.porto .judulporto h1 {
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37.8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 52px;
+}
+.porto i{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  cursor: pointer;
+  text-align: center;
+  line-height: 46px;
+  font-size: 1.2rem;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.porto i:first-child{
+  left: -23px;
+  display: none;
+}
+.porto i:last-child{
+  right: -0px;
+}
+.porto-porto {
+  width: 1000px;
+  box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0;
+  cursor: pointer;
+  margin:  0 auto;
+  scroll-behavior: smooth;
+}
+.porto-porto .dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.porto-porto .dragging img{
+  pointer-events: none;
+}
+.porto-porto img{
+  height: 340px;
+  object-fit: cover;
+  width: calc(100% /3);
+  margin-left: 14px;
+}
+
+.porto-porto img:first-child{
+  margin-left: 0px;
+}
+
+
+
+
+
+
+.faq {
+  width: 100%;
+  margin-top: 104px;
+  
+}
+
+.faq .judulfaq h1{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37.8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 52px;
+  letter-spacing: 4px;
+}
+
+.faq-container {
+  width: 975px;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding: 20px 24px;
+  
+  background-color: #F9FAFB;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.faq-answer {
+  display: none;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: justify;
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CSS Animations */
+.fade-in-up, .fade-in-left, .fade-in-right {
+  opacity: 0;
+  transform: translateY(40px); /* default for fade-in-up */
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in-left {
+  transform: translateX(-40px); /* default for fade-in-left */
+}
+
+.fade-in-right {
+  transform: translateX(40px); /* default for fade-in-right */
+}
+
+.fade-in-up.visible, .fade-in-left.visible, .fade-in-right.visible {
+  opacity: 1;
+  transform: translateY(0); /* final position for fade-in-up */
+}
+
+.fade-in-left.visible {
+  transform: translateX(0); /* final position for fade-in-left */
+}
+
+.fade-in-right.visible {
+  transform: translateX(0); /* final position for fade-in-right */
+}
+
+
+/* Untuk perangkat dengan lebar maksimum 1200px */
+@media (max-width: 1200px) {
+  .hero-home {
+    height: 590px;
+     /* Ubah menjadi cover untuk mengisi lebih baik */
+  }
+  .teks-hero {
+    font-size: 32px;
+    line-height: 40px;
+    top: 320px;
+    left: 100px;
+  }
+  .search-container {
+    width: 400px;
+    top: 420px;
+    left: 50px;
+  }
+
+
+
+
+
+
+  .kategori {
+    width: 90%; /* Sesuaikan dengan lebar layar */
+    margin-top: 60px;
+  }
+  .kategori .tekscat h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .kategori .categ {
+    flex-wrap: wrap; /* Ubah layout agar item berbaris vertikal bila terlalu sempit */
+    gap: 15px; /* Perbesar jarak antar elemen */
+    justify-content: center;
+  }
+  .kategori .categ .part {
+    width: 100px;
+    height: 50px;
+  }
+  .categ .part img {
+    width: 24px;
+    height: 24px;
+  }
+  .categ .part h1 {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .hero-home{
+    height: 430px;
+    margin-top: 50px;
+  }
+  .teks-hero{
+    margin-top: -100px;
+  }
+  .search-container{
+    margin-top: -100px;
+    height: 50px;
+  }
+
+
+
+
+
+
+
+
+
+  .produks {
+    width: 170px; /* Lebar lebih kecil untuk layar sedang */
+    padding: 10px; /* Kurangi padding */
+  }
+
+  .produks img {
+    width: 130px; /* Gambar lebih kecil */
+    height: 130px;
+  }
+
+  .nama-produk-category h2 {
+    font-size: 13px; /* Teks lebih kecil */
+  }
+
+  .harga-produk-category .price {
+    font-size: 14px;
+  }
+
+
+
+
+
+
+
+  .customer .judulcus p {
+    font-size: 28px; /* Font mengecil untuk layar sedang */
+  }
+
+  .customer .carouselcutom img {
+    width: 140px; /* Gambar lebih kecil untuk layar sedang */
+    height: auto; /* Tinggi menyesuaikan proporsi */
+  }
+
+  .customer .carouselcutom {
+    gap: 20px; /* Kurangi jarak antar gambar */
+  }
+
+
+
+
+
+
+
+  .catalog .judulcatalog h1 {
+    font-size: 28px; /* Font mengecil untuk layar sedang */
+  }
+
+  .catalog .contencatalog {
+    gap: 30px; /* Kurangi jarak antar elemen */
+  }
+
+  .contencatalog .imgcatalog {
+    width: 400px; /* Gambar lebih kecil */
+    height: 400px;
+  }
+
+  .contencatalog .tekscatalog p {
+    font-size: 18px; /* Ukuran teks lebih kecil */
+    line-height: 24px;
+  }
+
+
+
+
+
+
+  .aboutus {
+    width: 90%; /* Lebar menyesuaikan */
+    max-width: 1024px;
+    margin-top: 80px;
+  }
+
+  .aboutus .judulaboutus h1 {
+    font-size: 28px; /* Font tetap 28px */
+    line-height: 34px;
+  }
+
+  .aboutus .contenabout {
+    gap: 50px; /* Kurangi jarak antar elemen */
+  }
+
+  .aboutus .contenabout .imgabout img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .aboutus .contenabout p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+
+
+
+
+
+  .porto {
+    width: 90%; /* Lebar menyesuaikan */
+    max-width: 1024px;
+  }
+
+  .porto .judulporto h1 {
+    font-size: 28px; /* Font tetap 28px */
+    line-height: 34px;
+  }
+
+  .porto-porto {
+    width: 90%;
+  }
+
+  .porto-porto img {
+    height: 300px; /* Gambar lebih kecil */
+    width: calc(100% / 2.5);
+  }
+
+
+
+
+  .faq .judulfaq h1 {
+    font-size: 28px; /* Font tetap 28px */
+  }
+
+  .faq-container {
+    width: 90%; /* Lebar container mengikuti layar */
+    padding: 16px 20px; /* Padding lebih kecil */
+  }
+
+  .faq-question h3 {
+    font-size: 15px; /* Ukuran font pertanyaan menyesuaikan */
+  }
+
+  .faq-answer {
+    font-size: 13px; /* Ukuran font jawaban menyesuaikan */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Untuk perangkat dengan lebar maksimum 992px (tablet landscape) */
+@media (max-width: 992px) {
+  .hero-home{
+    width: 100%;
+    height: 500px;
+    margin-top: 0;
+  }
+  .search-container{
+    height: 50px;
+  }
+
+  
+
+
+
+
+  .kategori {
+    margin-top: 50px;
+  }
+  .kategori .categ {
+    gap: 10px;
+  }
+  .kategori .categ .part {
+    width: 90px;
+    height: 45px;
+    flex-direction: column; /* Susun ikon dan teks secara vertikal */
+    padding: 5px;
+  }
+  .categ .part img {
+    width: 20px;
+    height: 20px;
+  }
+  .categ .part h1 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+
+
+
+
+
+  .catalog {
+    width: 90%; /* Lebar menyesuaikan layar dengan margin */
+    max-width: 900px; /* Batas maksimal */
+    margin-top: 80px; /* Kurangi margin atas */
+    padding: 15px; /* Tambahkan padding */
+  }
+
+  .catalog .judulcatalog h1 {
+    font-size: 28px; /* Ukuran font mengecil */
+    line-height: 34px; /* Line-height menyesuaikan */
+    text-align: center; /* Teks rata tengah */
+    margin-bottom: 40px; /* Kurangi jarak bawah */
+  }
+
+  .catalog .contencatalog {
+    display: flex;
+    flex-direction: column; /* Elemen gambar dan teks menumpuk */
+    gap: 40px; /* Jarak antar elemen */
+    align-items: center; /* Elemen rata tengah */
+  }
+  .contencatalog .imgcatalog {
+    width: 400px; /* Ukuran gambar lebih kecil */
+    height: 400px; /* Tinggi gambar menyesuaikan */
+  }
+
+  .contencatalog .tekscatalog {
+    width: 100%; /* Teks memenuhi lebar container */
+    max-width: 500px; /* Batas maksimal untuk teks */
+    text-align: center; /* Teks rata tengah */
+  }
+
+  .contencatalog .tekscatalog p {
+    font-size: 18px; /* Ukuran font teks lebih kecil */
+    line-height: 24px; /* Line-height lebih kecil */
+    margin-bottom: 15px; /* Jarak antar paragraf lebih kecil */
+  }
+
+  .contencatalog .tekscatalog .buton-buton {
+    width: 100%; /* Tombol memenuhi lebar container */
+    max-width: 500px; /* Batas maksimal untuk tombol */
+    height: 50px; /* Tinggi tombol lebih kecil */
+    border-radius: 30px; /* Radius tombol lebih kecil */
+  }
+  .contencatalog .tekscatalog .buton-buton p {
+    font-size: 18px; /* Font pada tombol lebih kecil */
+  }
+
+
+
+
+
+
+  .aboutus {
+    width: 90%;
+    max-width: 992px;
+  }
+
+  .aboutus .contenabout {
+    flex-direction: column; /* Susun elemen vertikal */
+    text-align: center;
+    gap: 40px;
+  }
+
+  .aboutus .contenabout .imgabout img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .aboutus .contenabout p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+
+
+
+
+
+  .porto {
+    width: 90%;
+    max-width: 992px;
+  }
+
+  .porto .judulporto h1 {
+    font-size: 28px; /* Font tetap 28px */
+  }
+
+  .porto-porto {
+    width: 100%;
+  }
+
+  .porto-porto img {
+    height: 280px;
+    width: calc(100% / 2.5);
+  }
+
+  .porto i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+
+
+
+
+
+  .faq .judulfaq h1 {
+    font-size: 28px; /* Font tetap 28px */
+  }
+
+  .faq-container {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .faq-question h3 {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Untuk perangkat dengan lebar maksimum 768px (tablet portrait) */
+@media (max-width: 768px) {
+  .hero-home{
+    margin-top: -20px;
+  }
+  .teks-hero {
+    font-size: 24px;
+    margin-top: -50px;
+  }
+  .search-container {
+    max-width: 300px;
+    height: 30px;
+    margin-top: -70px;
+  }
+  .search-container i{
+    font-size: 15px;
+  }
+
+
+
+
+
+  .kategori {
+    margin-top: 40px;
+  }
+  .kategori .categ {
+    gap: 8px;
+  }
+  .kategori .categ .part {
+    flex-direction: column; /* Ubah ke vertikal saat layar mengecil */
+    width: 100px; /* Lebar lebih kecil */
+    height: auto; /* Tinggi menyesuaikan konten */
+    padding: 10px; /* Ruang lebih besar */
+  }
+  .categ .part img {
+    width: 24px; /* Gambar lebih kecil */
+    height: 24px;
+  }
+
+  .categ .part h1 {
+    font-size: 10px; /* Ukuran teks lebih kecil */
+    line-height: 12px;
+    text-align: center; /* Teks dipusatkan di bawah gambar */
+  }
+
+
+
+
+
+
+  .bs .judulbs p {
+    font-size: 28px; /* Judul lebih kecil */
+  }
+
+  .produks {
+    width: 150px; /* Lebar lebih kecil untuk layar tablet */
+    padding: 8px; /* Kurangi padding */
+  }
+
+  .produks img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .nama-produk-category h2 {
+    font-size: 12px;
+  }
+
+  .harga-produk-category .price {
+    font-size: 12px;
+  }
+  .diskon-produk-category {
+    gap: 3px; /* Kurangi jarak antar elemen */
+  }
+
+
+
+
+
+
+  .customer .judulcus p {
+    font-size: 26px; /* Font lebih kecil untuk tablet */
+  }
+
+  .customer .carouselcutom img {
+    width: 120px; /* Gambar lebih kecil untuk tablet */
+  }
+
+  .customer .carouselcutom {
+    gap: 15px; /* Kurangi jarak antar gambar */
+  }
+
+
+
+
+
+
+
+  .catalog .judulcatalog h1 {
+    font-size: 28px; /* Font lebih kecil untuk tablet */
+  }
+
+  .catalog .contencatalog {
+    flex-direction: column; /* Gambar dan teks akan menumpuk */
+    align-items: center;
+  }
+
+  .contencatalog .imgcatalog {
+    width: 350px; /* Gambar lebih kecil */
+    height: 350px;
+  }
+
+  .contencatalog .tekscatalog {
+    text-align: center; /* Teks rata tengah */
+  }
+
+  .contencatalog .tekscatalog p {
+    font-size: 16px; /* Ukuran teks lebih kecil */
+    line-height: 22px;
+  }
+
+
+
+
+
+
+
+  .aboutus {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .aboutus .contenabout {
+    gap: 30px;
+  }
+
+  .aboutus .contenabout .imgabout img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .aboutus .contenabout p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+
+
+
+
+
+  .porto {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .porto .judulporto h1 {
+    font-size: 28px; /* Font tetap 28px */
+  }
+
+  .porto-porto img {
+    height: 250px;
+    width: calc(100% / 2);
+  }
+
+  .porto i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1rem;
+  }
+
+
+
+
+
+
+  .faq .judulfaq h1 {
+    font-size: 28px; /* Font tetap 28px */
+    margin-bottom: 40px;
+  }
+
+  .faq-container {
+    width: 95%;
+    padding: 14px;
+  }
+
+  .faq-question h3 {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    font-size: 12px;
+    line-height: 1.5; /* Menambahkan jarak antar baris */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Untuk perangkat dengan lebar maksimum 576px (smartphone landscape) */
+@media (max-width: 576px) {
+  .hero{
+    height: 380px;
+  }
+  .hero-home {
+    margin-top: -65px;
+    
+  }
+  .teks-hero {
+    font-size: 15px;
+    top: 300px;
+    left: 50px;
+  }
+  .search-container {
+    width: 200px;
+    height: 23px;
+    top: 385px;
+    left: 20px;
+    padding: 3px 5px 3px 5px;
+
+  }
+  .search-container input{
+    width: 50px;
+  }
+  .search-container .search-input{
+   padding: 3px 10px;
+   margin-right: 10px;
+   font-size: 13px;
+  }
+  .search-input::placeholder{
+    font-size: 13px;
+  }
+  .search-button i{
+    font-size: 13px;
+    margin-left: -20px;
+  }
+
+
+
+
+
+
+  .kategori {
+    width: 100%;
+    margin-top: -80px;
+  }
+  .kategori .tekscat h1 {
+    font-size: 24px;
+  }
+  .kategori .categ {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .kategori .categ .part {
+    flex-direction: column; /* Gambar di atas teks */
+    width: 90px; /* Lebar lebih kecil */
+    height: auto;
+    padding: 8px;
+  }
+
+  .categ .part img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .categ .part h1 {
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+  }
+
+
+
+
+
+  
+  .bs .judulbs p {
+    font-size: 28px; /* Judul lebih kecil */
+  }
+  .produks {
+    width: 120px; /* Lebar lebih kecil untuk layar kecil */
+    padding: 6px;
+  }
+
+  .produks img {
+    width: 100px; /* Gambar lebih kecil */
+    height: 100px;
+  }
+
+  .nama-produk-category h2 {
+    font-size: 11px;
+  }
+  .harga-produk-category .price {
+    font-size: 10px;
+  }
+
+
+
+
+
+
+  .customer .judulcus p {
+    font-size: 24px; /* Font lebih kecil untuk ponsel */
+    text-align: center; /* Judul tetap di tengah */
+  }
+
+  .customer .carouselcutom img {
+    width: 100px; /* Gambar lebih kecil untuk ponsel */
+  }
+
+  .customer .carouselcutom {
+    gap: 10px; /* Kurangi jarak antar gambar */
+  }
+
+
+
+
+
+
+
+  .catalog .judulcatalog h1 {
+    font-size: 28px; /* Font lebih kecil untuk ponsel */
+    text-align: center;
+  }
+
+  .contencatalog .imgcatalog {
+    width: 300px; /* Gambar lebih kecil */
+    height: 300px;
+  }
+
+  .contencatalog .tekscatalog p {
+    font-size: 14px; /* Ukuran teks lebih kecil */
+    line-height: 20px;
+  }
+
+  .contencatalog .tekscatalog .buton-buton {
+    width: 90%; /* Tombol memenuhi lebar layar */
+  }
+
+  .contencatalog .tekscatalog .buton-buton p {
+    font-size: 18px; /* Font pada tombol lebih kecil */
+  }
+
+
+
+
+
+
+  .aboutus {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .aboutus .judulaboutus h1 {
+    font-size: 28px; /* Font tetap 28px */
+    text-align: center;
+  }
+
+  .aboutus .contenabout {
+    flex-direction: column; /* Elemen disusun vertikal */
+    gap: 20px;
+  }
+
+  .aboutus .contenabout .imgabout img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .aboutus .contenabout p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+
+
+
+
+
+  .porto {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .porto .judulporto h1 {
+    font-size: 28px; /* Font tetap 28px */
+    text-align: center;
+  }
+
+  .porto-porto img {
+    height: 200px;
+    width: calc(100% / 1.5);
+  }
+
+  .porto i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.9rem;
+  }
+
+
+
+
+
+
+
+  .faq .judulfaq h1 {
+    font-size: 28px; /* Font tetap 28px */
+    text-align: center;
+  }
+
+  .faq-container {
+    width: 95%;
+    padding: 12px;
+    border-radius: 12px; /* Border radius lebih kecil */
+  }
+
+  .faq-question h3 {
+    font-size: 13px; /* Font lebih kecil untuk layar kecil */
+  }
+
+  .faq-answer {
+    font-size: 11px;
+    text-align: justify;
+  }
+
+  .arrow {
+    font-size: 0.9rem; /* Ukuran ikon lebih kecil */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Untuk perangkat dengan lebar maksimum 375px (smartphone portrait) */
+@media (max-width: 375px) {
+ .hero-home{
+  width: 100%;
+  height: 300px;
+  margin-top: -50px;
+ }
+ .hero{
+  height: 300px;
+ }
+ .teks-hero{
+  font-size: 5px;
+ }
+
+
+
+
+
+
+  .kategori {
+    margin-top: 20px;
+  }
+  .kategori .tekscat h1 {
+    font-size: 20px;
+  }
+  .kategori .categ .part {
+    flex-direction: column; /* Tetap vertikal */
+    width: 80px; /* Lebar lebih kecil */
+    height: auto;
+    padding: 6px;
+  }
+
+  .categ .part img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .categ .part h1 {
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+  }
+
+
+
+
+
+  .bs .judulbs p {
+    font-size: 28px; /* Judul lebih kecil */
+    margin-bottom: 10px;
+  }
+
+  .produks {
+    width: 100px; /* Lebar lebih kecil untuk layar sangat kecil */
+    padding: 5px;
+  }
+
+  .produks img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nama-produk-category h2 {
+    font-size: 10px;
+  }
+  .harga-produk-category .price {
+    font-size: 9px;
+  }
+
+  .diskon-produk-category {
+    gap: 2px; /* Kurangi jarak antar elemen */
+  }
+
+
+
+
+
+
+
+  .customer .judulcus p {
+    font-size: 22px; /* Font lebih kecil untuk layar sangat kecil */
+    text-align: center; /* Teks tetap rapi di tengah */
+  }
+
+  .customer .carouselcutom img {
+    width: 80px; /* Gambar lebih kecil untuk layar kecil */
+  }
+
+  .customer .carouselcutom {
+    gap: 8px; /* Jarak antar gambar lebih kecil */
+  }
+
+
+
+
+
+  .catalog .judulcatalog h1 {
+    font-size: 28px; /* Font lebih kecil untuk layar kecil */
+  }
+
+  .contencatalog .imgcatalog {
+    width: 250px; /* Gambar lebih kecil */
+    height: 250px;
+  }
+
+  .contencatalog .tekscatalog p {
+    font-size: 12px; /* Ukuran teks lebih kecil */
+    line-height: 18px;
+  }
+
+  .contencatalog .tekscatalog .buton-buton p {
+    font-size: 16px; /* Font tombol lebih kecil */
+  }
+
+
+
+
+
+  .aboutus {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .aboutus .contenabout .imgabout img {
+    width: 200px; /* Gambar lebih kecil */
+    height: 200px;
+  }
+
+  .aboutus .contenabout p {
+    font-size: 12px; /* Font lebih kecil */
+    line-height: 18px;
+  }
+
+  .aboutus .judulaboutus h1 {
+    font-size: 28px; /* Font tetap 28px */
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+
+
+
+
+  .porto {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .porto .judulporto h1 {
+    font-size: 28px; /* Font tetap 28px */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .porto-porto img {
+    height: 180px;
+    width: 100%;
+    margin-left: 0; /* Hapus margin untuk gambar */
+  }
+
+  .porto i {
+    display: none; /* Sembunyikan panah pada layar kecil */
+  }
+
+
+
+
+
+
+
+  .faq .judulfaq h1 {
+    font-size: 28px; /* Font tetap 28px */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .faq-container {
+    width: 95%;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Shadow lebih halus */
+  }
+
+  .faq-question h3 {
+    font-size: 12px;
+  }
+
+  .faq-answer {
+    font-size: 11px;
+    line-height: 1.4; /* Menyesuaikan jarak antar baris */
+  }
+
+  .arrow {
+    font-size: 0.8rem; /* Ikon lebih kecil */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

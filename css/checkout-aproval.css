@@ -1,0 +1,972 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", serif;
+}
+body{
+    background-color: #F9FAFB;
+}
+
+
+
+
+
+.checkout{
+    width: 100%;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FAFB;
+    margin-top: 130px;
+   }
+   .checkout .checkout-step{
+       width: 900px;
+       height: 62px;
+       display: flex;
+       justify-content: space-between;
+       margin-left: 15px;
+       margin-right: 15px;
+   }
+   .checkout-step .step-checkout .proses-proses{
+       width: 37px;
+       height: 37px;
+       border-radius: 60px;
+       padding: 8px 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #0B1765;
+       font-family: "Plus Jakarta Sans", serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 21px;
+       color: #FFFFFF;
+       margin: 0 auto 8px auto
+   }
+   
+   
+   
+   .checkout-step .step-checkout .proses{
+       width: 37px;
+       height: 37px;
+       border-radius: 60px;
+       padding: 8px 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #F3F4F6;
+       font-family: "Plus Jakarta Sans", serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 21px;
+       color: #0B1765;
+       margin: 0 auto 8px auto
+   }
+   .checkout-step .step-checkout .teks-step{
+       font-family: "Plus Jakarta Sans", serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 21px;
+       color: #374151;
+       
+   }
+
+
+
+
+
+   .benner-aproval{
+    width: 100%;
+    height: 422px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   }
+   .benner-aproval .isi-benner h1{
+        font-family: "Plus Jakarta Sans", serif;
+       font-weight: 700;
+       font-size: 48px;
+       line-height: 60.48px;
+       color: #0B1765;
+       text-align: center;
+   }
+   .benner-aproval .isi-benner p{
+    font-family: "Plus Jakarta Sans", serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 27px;
+   color: #6B7280;
+   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.body-isi{
+    width: 1228px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+}
+.info-order{
+    width: 1228px;
+    margin: 0 auto;
+    border: 1px solid #E5E7EB;
+    border-radius: 24px;
+    padding: 40px; /* Padding atas, bawah, kiri, kanan tetap 40px */
+    margin-bottom: 80px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+   }
+
+   .info-order-judul h1{
+    font-family: "Plus Jakarta Sans", serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   color: #111827;
+   
+   }
+
+   .info-order-judul p{
+    font-family: "Plus Jakarta Sans", serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 21px;
+   color: #6B7280;
+   }
+   hr{
+    background-color: #F3F4F6;
+    border: none;
+    height: 1px;
+    margin: 30px 0;
+   }
+
+   .id-date{
+    display: flex;
+    gap: 29px;
+    flex-wrap: wrap; /* Memastikan elemen turun jika tidak cukup ruang */
+    align-items: flex-start;
+   }
+   .id-date .id,
+   .id-date .date{
+    width: 362px;
+    width: calc(33.33% - 19.33px);
+    flex: 1 1 0; /* Membagi elemen agar fleksibel dengan lebar konsisten */
+    max-width: 362px; /* Memberikan batas maksimum lebar */
+    box-sizing: border-box; /* Memastikan padding tidak memengaruhi ukuran total */
+    word-wrap: break-word;
+   }
+ 
+
+   .id-date h6{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6B7280;
+    margin-bottom: 10px;
+   }
+   .isi-id, 
+   .isi-date{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #111827;
+   }
+
+
+
+
+
+
+   .name-email-number{
+    display: flex;
+    margin-top: 20px;
+    gap: 29px;
+    flex-wrap: wrap; /* Memastikan elemen turun jika tidak cukup ruang */
+    align-items: flex-start;
+   }
+   .name-email-number .name,
+   .name-email-number .email,
+   .name-email-number .number{
+    width: 362px;
+    width: calc(33.33% - 19.33px);
+    flex: 1 1 0; /* Membagi elemen agar fleksibel dengan lebar konsisten */
+    max-width: 362px; /* Memberikan batas maksimum lebar */
+    box-sizing: border-box; /* Memastikan padding tidak memengaruhi ukuran total */
+    word-wrap: break-word;
+   }
+  
+   .name-email-number h6{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6B7280;
+    margin-bottom: 10px;
+   }
+   .isi-name,
+   .isi-email,
+   .isi-number{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #111827;
+   }
+
+
+   .aproval-orderlist{
+    width: 1228px;
+    margin: 0 auto;
+    border: 1px solid #E5E7EB;
+    border-radius: 24px;
+    padding: 40px; /* Padding atas, bawah, kiri, kanan tetap 40px */
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+   }
+   .aproval-orderlist .judul-judul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .judul-judul .order-judul{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+   }
+   .order-view{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+   }
+   .order-view h5{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00AFEF;
+    cursor: pointer;
+   }
+   .order-view i{
+    width: 20px;
+    height: 20px;
+    color: #00AFEF ;
+   }
+
+
+
+
+   .produk-order{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+   }
+   .produk-info{
+    display: flex;
+    gap: 8px;
+   }
+   .produk-info .info-gambar img{
+    width: 46px;
+    height: 46px;
+   }
+   .produk-info .info-detail .info-name{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: #000000;
+   }
+   .produk-info .info-detail .info-custom{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #374151;
+    width: 38px;
+    height: 19px;
+    border: 1px solid #00AFEF;
+    border-radius: 60px;
+    padding: 2px 8px;
+    margin: 5px 0;
+   }
+   .produk-info .info-detail .info-total{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #111827;
+   }
+
+   .approval-mockup{
+    width: 230px;
+    height: 40px;
+    border-radius: 60px;
+    padding: 12px 18px;
+    background-color: #0B1765;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F9FAFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+
+   .sample .download-sample{
+    height: 40px;
+    border-radius: 60px;
+    border: none;
+    padding: 12px 18px;
+    background-color: #F3F4F6;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0B176599;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .sample p{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    color: #6D6D6D;
+  
+    margin-top: 5px;
+    
+   }
+   .produk-container {
+    display: none; /* Sembunyikan container produk awalnya */
+}
+
+.produk-container.show {
+    display: block; /* Tampilkan container produk saat dropdown aktif */
+    margin-top: 20px;
+}
+/* Awal ikon menghadap ke bawah */
+.arrow {
+    transition: transform 0.3s ease; /* Smooth rotation effect */
+}
+
+/* Ikon berputar ke atas saat dropdown aktif */
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* Default state untuk dropdown */
+.produk-container {
+    display: none; /* Hidden by default */
+}
+
+/* Dropdown aktif */
+.produk-container.show {
+    display: block; /* Show the dropdown content */
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+.selesaikan{
+    width: 230px;
+    height: 40px;
+    background-color: #0B1765;
+    border-radius: 60px;
+    padding: 12px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.selesaikan a{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F9FAFB;
+}
+
+
+
+
+
+
+
+
+   .approval-policy{
+    width: 415px;
+    margin-top: 15px;
+   }
+   .approval-policy h1{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+   }
+   .approval-policy p{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6B7280;
+    text-align: justify;
+   }
+
+
+
+
+
+
+
+
+
+
+.popup-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.popup{
+    width: 440px;
+    opacity: 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    margin: auto;
+    position: absolute; /* Required to position elements inside the popup */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(.25);
+    transition: all .5s .1s;
+}
+.container-image {
+    position: relative; /* Dibutuhkan untuk overlay */
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    overflow: hidden; /* Agar overlay tidak keluar dari container */
+}
+
+.container-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Untuk menjaga proporsi gambar */
+}
+
+.container-image .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0; /* Disembunyikan secara default */
+    pointer-events: none; /* Agar tidak mengganggu interaksi dengan gambar */
+    z-index: 2; /* Pastikan teks berada di atas gambar */
+}
+
+.container-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8080808C; /* Warna transparan */
+    opacity: 0; /* Disembunyikan secara default */
+    z-index: 1; /* Pastikan overlay berada di atas gambar tapi di bawah teks */
+    transition: opacity 0.3s ease; /* Animasi efek hover */
+}
+
+.container-image:hover::before {
+    opacity: 1; /* Munculkan overlay saat hover */
+}
+
+.container-image:hover .overlay-text {
+    opacity: 1; /* Munculkan teks saat hover */
+}
+
+.buton-popup{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+ .revisi .buton-revisi,
+ .approve .buton-approve{
+    width: 195px;
+    height: 45px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F4F6;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 36px;
+    color: #8E8E93;
+}
+.revisi .buton-revisi:hover,
+ .approve .buton-approve:hover{
+    background-color: #0B1765;
+    color: #F9FAFB;
+ }
+ .revisi .buton-revisi:active,
+ .approve .buton-approve:active{
+    background-color: #0B1765;
+    color: #F9FAFB;
+ }
+.revisi p{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 8.5px;
+    line-height: 21px;
+    color: #6D6D6D;
+}
+.revisi p span {
+    font-style: italic;
+}
+
+#popup-container:target{
+    opacity: 1;
+    visibility: visible;
+}
+#popup-container:target .popup{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px; /* Jarak dari atas popup */
+    right: 20px; /* Jarak dari kanan popup */
+    bottom: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    display: inline-block;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animasi saat hover */
+}
+
+.popup-close:hover {
+    color: #555; /* Ubah warna saat hover */
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .checkout .checkout-step {
+      width: 90%;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 12px;
+    }
+
+
+
+
+
+    .benner-aproval {
+        height: auto; /* Membiarkan tinggi menyesuaikan konten */
+        padding: 30px;
+    }
+
+    .benner-aproval .isi-benner h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .benner-aproval .isi-benner p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+
+    .id-date,
+    .name-email-number {
+        gap: 12px; /* Gap lebih kecil */
+    }
+
+    .id-date .id,
+    .id-date .date,
+    .name-email-number .name,
+    .name-email-number .email,
+    .name-email-number .number {
+        width: calc(50% - 10px); /* Menggunakan 2 kolom */
+    }
+    .body-isi {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .info-order {
+        padding: 30px;
+    }
+
+    .info-order-judul h1 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .info-order-judul p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .isi-id,
+    .isi-date,
+    .isi-name,
+    .isi-email,
+    .isi-number {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+
+
+
+
+  /* Responsif untuk 992px */
+  @media screen and (max-width: 992px) {
+    .checkout .checkout-step {
+      width: 85%;
+      gap: 10px;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 28px;
+      height: 28px;
+      font-size: 11px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 11px;
+    }
+
+
+
+
+
+
+
+    .benner-aproval {
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+
+    .benner-aproval .isi-benner h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .benner-aproval .isi-benner p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+
+
+
+    
+    .info-order {
+        padding: 20px;
+    }
+
+    .info-order-judul h1 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .info-order-judul p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .isi-id,
+    .isi-date,
+    .isi-name,
+    .isi-email,
+    .isi-number {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+
+
+
+
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .benner-aproval {
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .benner-aproval .isi-benner h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .benner-aproval .isi-benner p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+
+
+
+    .id-date,
+    .name-email-number {
+        gap: 8px; /* Gap lebih kecil */
+    }
+
+    .id-date .id,
+    .id-date .date,
+    .name-email-number .name,
+    .name-email-number .email,
+    .name-email-number .number {
+        width: calc(50% - 8px); /* Masih 2 kolom */
+    }
+    .info-order {
+        padding: 15px;
+    }
+
+    .info-order-judul h1 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .info-order-judul p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .isi-id,
+    .isi-date,
+    .isi-name,
+    .isi-email,
+    .isi-number {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+
+
+
+
+
+ /* Responsif untuk 576px */
+ @media screen and (max-width: 576px) {
+    .checkout .checkout-step {
+      width: 100%;
+      gap: 6px;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 22px;
+      height: 22px;
+      font-size: 9px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 9px;
+    }
+
+
+
+
+
+
+    .benner-aproval {
+        padding: 15px;
+        margin-bottom: 50px;
+    }
+
+    .benner-aproval .isi-benner h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .benner-aproval .isi-benner p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+
+
+
+    .id-date,
+    .name-email-number {
+        gap: 6px; /* Gap lebih kecil */
+    }
+
+    .id-date .id,
+    .id-date .date,
+    .name-email-number .name,
+    .name-email-number .email,
+    .name-email-number .number {
+        width: 100%; /* Satu kolom untuk layar kecil */
+    }
+    .info-order-judul h1 {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .info-order-judul p {
+        font-size: 9px;
+        line-height: 14px;
+    }
+
+    .isi-id,
+    .isi-date,
+    .isi-name,
+    .isi-email,
+    .isi-number {
+        font-size: 13px;
+        line-height: 20px;
+    }
+ }
+
+
+
+
+
+
+      /* Responsif untuk 375px */
+      @media screen and (max-width: 375px) {
+        .checkout .checkout-step {
+          width: 100%;
+          gap: 4px;
+        }
+      
+        .checkout-step .step-checkout .proses,
+        .checkout-step .step-checkout .proses-proses {
+          width: 20px;
+          height: 20px;
+          font-size: 8px;
+        }
+      
+        .checkout-step .step-checkout .teks-step {
+          font-size: 8px;
+        }
+
+
+
+
+
+
+
+
+        .benner-aproval {
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+    
+        .benner-aproval .isi-benner h1 {
+            font-size: 24px;
+            line-height: 34px;
+        }
+    
+        .benner-aproval .isi-benner p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+
+
+
+        .id-date,
+    .name-email-number {
+        gap: 4px; /* Gap semakin kecil */
+    }
+
+    .id-date .id,
+    .id-date .date,
+    .name-email-number .name,
+    .name-email-number .email,
+    .name-email-number .number {
+        width: 100%; /* Tetap satu kolom */
+    }
+        .info-order {
+            padding: 8px;
+        }
+    
+        .info-order-judul h1 {
+            font-size: 10px;
+            line-height: 15px;
+        }
+    
+        .info-order-judul p {
+            font-size: 8px;
+            line-height: 12px;
+        }
+    
+        .isi-id,
+        .isi-date,
+        .isi-name,
+        .isi-email,
+        .isi-number {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }    

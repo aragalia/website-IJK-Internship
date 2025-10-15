@@ -1,0 +1,917 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", serif;
+}
+body{
+    background-color: #F9FAFB;
+
+   
+}
+section.herocategory {
+    width: 100%;
+    height: 660px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    background-image: url("../img/bg-cart.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+   
+  }
+  
+  
+  
+  
+  .teks-hero-category {
+    margin-left: 78px;
+    margin-top: 330px;
+    width: 420px;
+    height: 90px;
+  }
+  .teks-hero-category h1{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .search-container-category {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 63px;
+    border: 2px solid #b3c3dd;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 456px;
+    height: 57px;
+    background-color: #f5f8fc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .search-input-category {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    color: #333;
+    padding: 5px 10px;
+  }
+  
+  .search-input-category::placeholder {
+    color: #b3c3dd;
+  }
+  
+  .search-button-category {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-button-category i {
+    font-size: 18px;
+    color: #b3c3dd;
+  }
+  
+
+
+
+
+
+
+
+
+
+  .produk-cart{
+    width: 1328px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .produk-cart .checkbox {
+    position: relative;
+}
+
+/* Sembunyikan input checkbox asli */
+.produk-cart .checkbox input {
+    display: none;
+}
+
+/* Label untuk custom checkbox */
+.produk-cart .checkbox label {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #6B7280;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Sembunyikan ikon secara default */
+.produk-cart .checkbox label i {
+    color: #fff; /* Ikon tidak terlihat awalnya */
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 0.3s;
+}
+
+/* Gaya ketika checkbox dicentang */
+.produk-cart .checkbox input:checked + label {
+    background-color: #0B1765;
+    border-color: #0B1765;
+}
+
+/* Tampilkan ikon ceklis ketika dicentang */
+.produk-cart .checkbox input:checked + label i {
+    opacity: 1;
+}
+
+  .produk-cart .produk-cart-cart{
+    width: 1268px;
+    height: 180px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    display: flex;
+    
+  }
+  .produk-cart-cart .produk-cart-cart-img img{
+    width: 180px;
+    height: 180px;
+    margin-right: 20px;
+  }
+
+  .produk-cart-cart .produk-cart-cart-isi{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .produk-cart-cart-spek .produk-cart-cart-spek-name{
+    width: 54px;
+    height: 19px;
+    border-radius: 60px;
+    padding: 2px 8px;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #374151;
+    background-color: #F3F4F6;
+    margin-bottom: 5px;
+  }
+  .produk-cart-cart-spek .produk-cart-cart-spek-judul{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #111827;
+    margin-bottom: 5px;
+  }
+  .produk-cart-cart-spek .produk-cart-cart-spek-custom {
+    display: flex; /* Membuat kontainer menjadi fleksibel untuk mengikuti ukuran elemen di dalamnya */
+    gap: 8px; /* Memberikan jarak antar elemen */
+}
+
+.produk-cart-cart-spek .produk-cart-cart-spek-custom .custpm-produk {
+    display: inline-block; /* Agar p mengikuti ukuran kontennya */
+    border-radius: 60px;
+    padding: 2px 8px;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #374151;
+    background-color: #F3F4F6;
+}
+  .produk-cart-cart-harga .produk-cart-cart-harga-satuan{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25.2px;
+    text-align: right;
+    color: #0B1765;
+    margin-bottom: 20px;
+  }
+  .produk-cart-cart-harga{
+    margin-right: 40px;
+   }
+
+   
+   .produk-cart-cart-harga .produk-cart-cart-harga-jumlahbarang {
+    display: flex;
+    width: 100%; /* Ubah lebar menjadi 100% agar kontainer menyesuaikan ukuran layar */
+    max-width: 98px;
+    height: 28px;
+    padding: 0 8px;
+    border-radius: 60px;
+    border: 1px solid #2A5089;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    overflow: hidden;
+}
+
+.produk-cart-cart-harga-jumlahbarang input[type="number"] {
+    width: 30px;
+    height: 100%;
+    border: none;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+    background-color: transparent;
+    -moz-appearance: textfield; /* Menghilangkan spinner di Firefox */
+}
+
+.produk-cart-cart-harga-jumlahbarang input[type="number"]::-webkit-inner-spin-button,
+.produk-cart-cart-harga-jumlahbarang input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Menghilangkan spinner di Chrome */
+    margin: 0;
+}
+
+.produk-cart-cart-harga-jumlahbarang i {
+    font-size: 14px;
+    cursor: pointer;
+    color: #2A5089;
+}
+
+.produk-cart-cart-harga-jumlahbarang i:hover {
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .cart-total{
+    width: 100%;
+    height: 76px;
+    background-color: #FFFFFF;
+  }
+  .cart-total .cart-total-total{
+    display: flex;
+    justify-content: space-between;
+    width: 1328px;
+    height: 76px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cart-total-total .chekbox-total{
+    display: flex;
+    align-items: center;
+  }
+  .cart-total-total .chekbox-total .ket{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-left: 15px;
+  }
+
+  .cart-total-total .chekbox-total .hapus-total{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-left: 40px;
+  }
+
+  .cart-total-total .cart-total-harga{
+    display: flex;
+    align-items: center;
+  }
+  .cart-total-total .cart-total-harga .ket-total-produk{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-right: 40px;
+  }
+  .cart-total-total .cart-total-harga .harga-total-produk{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30.24px;
+    color: #0B1765;
+    margin-right: 15px;
+  }
+  .cart-total-total .cart-total-harga .checkout-total-harga{
+    width: 214px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #0B1765;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Default CSS Sudah Ditulis di Atas, Ini Tambahan untuk Responsive */
+
+/* Untuk layar dengan lebar maksimum 1024px */
+@media (max-width: 1024px) {
+  section.herocategory {
+    height: 560px;
+    margin-top: 16px;
+    margin-bottom: 80px;
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+  }
+
+  .teks-hero-category {
+    margin-left: 20px;
+    margin-top: 280px;
+    width: 360px;
+  }
+
+  .teks-hero-category h1 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .search-container-category {
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 400px;
+    height: 50px;
+    padding: 5px 10px;
+  }
+
+  .search-input-category {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  .search-button-category i {
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+
+
+  .produk-cart {
+    width: 90%; /* Lebar menyesuaikan */
+    gap: 15px; /* Jarak antar produk cart */
+  }
+
+  .produk-cart .produk-cart-cart {
+    width: 100%;
+    height: 150px;
+  }
+
+  .produk-cart-cart .produk-cart-cart-img img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .produk-cart-cart-spek .produk-cart-cart-spek-judul {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .produk-cart-cart-harga {
+    margin-right: 20px; /* Kurangi margin agar lebih rapi */
+  }
+
+  .produk-cart-cart-harga-jumlahbarang {
+    width: 100%;
+    height: auto;
+    padding: 0 25px;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .produk-cart-cart-harga-jumlahbarang i {
+    font-size: 20px;
+  }
+
+  .produk-cart-cart-harga-jumlahbarang input[type="number"] {
+    width: 60px;
+    font-size: 18px;
+  }
+
+  
+
+
+
+
+
+
+  .cart-total .cart-total-total {
+    width: 100%;
+    padding: 0 15px;
+}
+.cart-total-total .chekbox-total .hapus-total {
+    margin-left: 20px;
+}
+.cart-total-total .cart-total-harga {
+    justify-content: flex-start;
+}
+.cart-total-total .cart-total-harga .ket-total-produk {
+    margin-right: 20px;
+}
+.cart-total-total .cart-total-harga .harga-total-produk {
+    font-size: 18px;
+}
+.cart-total-total .cart-total-harga .checkout-total-harga {
+    width: 180px;
+    font-size: 14px;
+}
+}
+
+/* Untuk layar dengan lebar maksimum 992px */
+@media (max-width: 992px) {
+  section.herocategory {
+    height: 500px;
+    padding: 0 15px;
+  }
+
+  .teks-hero-category {
+    margin-left: 15px;
+    margin-top: 280px;
+    width: 320px;
+  }
+
+  .teks-hero-category h1 {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  .search-container-category {
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 360px;
+    height: 45px;
+    padding: 5px 10px;
+  }
+
+  .search-input-category {
+    font-size: 14px;
+  }
+
+  .search-button-category i {
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+
+
+  .produk-cart {
+    width: 90%;
+    gap: 10px; /* Jarak antar produk semakin kecil */
+  }
+
+  .produk-cart .produk-cart-cart {
+    height: 140px;
+  }
+
+  .produk-cart-cart .produk-cart-cart-img img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .produk-cart-cart-spek .produk-cart-cart-spek-judul {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .produk-cart-cart-harga {
+    margin-right: 15px;
+  }
+
+  .produk-cart-cart-harga-jumlahbarang {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .produk-cart-cart-harga-jumlahbarang i {
+    font-size: 18px;
+  }
+
+  .produk-cart-cart-harga-jumlahbarang input[type="number"] {
+    width: 50px;
+    font-size: 16px;
+  }
+
+  
+
+
+
+
+
+
+  .cart-total .cart-total-total {
+    width: 100%;
+    padding: 0 10px;
+}
+.cart-total-total .chekbox-total .hapus-total {
+    margin-left: 15px;
+}
+.cart-total-total .cart-total-harga {
+    
+    align-items: flex-start;
+}
+.cart-total-total .cart-total-harga .ket-total-produk {
+    margin-right: 10px;
+}
+.cart-total-total .cart-total-harga .harga-total-produk {
+    font-size: 18px;
+   
+}
+.cart-total-total .cart-total-harga .checkout-total-harga {
+  width: 150px;
+  font-size: 14px;
+}
+}
+
+/* Default CSS Sudah Ada */
+
+/* Untuk layar dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+  section.herocategory {
+    height: 460px;
+    background-position: right; /* Fokus background ke kanan */
+    padding: 0 10px;
+  }
+
+  .teks-hero-category {
+    margin-left: 10px;
+    margin-top: 280px; /* Posisi lebih ke bawah */
+    width: 300px;
+  }
+
+  .teks-hero-category h1 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .search-container-category {
+    margin-left: 10px;
+    margin-top: 10px; /* Jarak tambahan untuk ke bawah */
+    width: 320px;
+    height: 40px;
+    padding: 5px 10px;
+  }
+
+
+
+
+
+
+
+  .produk-cart {
+    width: 95%;
+    gap: 8px; /* Jarak antar produk semakin kecil */
+  }
+
+  .produk-cart .produk-cart-cart {
+    height: 120px;
+  }
+
+  .produk-cart-cart .produk-cart-cart-img img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .produk-cart-cart-spek .produk-cart-cart-spek-judul {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .produk-cart-cart-harga {
+    margin-right: 10px;
+  }
+
+  .produk-cart-cart-harga-jumlahbarang {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .produk-cart-cart-harga-jumlahbarang i {
+    font-size: 16px;
+  }
+
+  .produk-cart-cart-harga-jumlahbarang input[type="number"] {
+    width: 40px;
+    font-size: 14px;
+  }
+
+
+
+
+
+
+
+
+
+  .cart-total .cart-total-total {
+    width: 100%;
+    padding: 0 10px;
+}
+.cart-total-total .chekbox-total {
+    margin-left: 15px;
+}
+.cart-total-total .cart-total-harga {
+    justify-content: flex-start;
+}
+.cart-total-total .cart-total-harga .ket-total-produk {
+    margin-right: 10px;
+}
+.cart-total-total .cart-total-harga .harga-total-produk {
+    font-size: 16px;
+}
+.cart-total-total .cart-total-harga .checkout-total-harga {
+    width: 150px;
+    font-size: 14px;
+}
+}
+
+/* Untuk layar dengan lebar maksimum 576px */
+@media (max-width: 576px) {
+  section.herocategory {
+    height: 420px;
+    background-position: right; /* Fokus background ke kanan */
+    padding: 0 10px;
+  }
+
+  .teks-hero-category {
+    margin-left: 10px;
+    margin-top: 250px; /* Posisi lebih ke bawah */
+    width: 260px;
+  }
+
+  .teks-hero-category h1 {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .search-container-category {
+    margin-left: 10px;
+    margin-top: 20px; /* Jarak tambahan untuk ke bawah */
+    width: 280px;
+    height: 36px;
+    padding: 5px 8px;
+  }
+
+
+
+
+
+
+
+
+  .produk-cart {
+    width: 90%;
+    margin: auto;
+    padding: 0; /* Jarak antar produk semakin kecil */
+  }
+
+  .produk-cart .produk-cart-cart {
+    height: 110px;
+  }
+
+  .produk-cart-cart .produk-cart-cart-img img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .produk-cart-cart-spek .produk-cart-cart-spek-judul {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .produk-cart-cart-harga {
+    margin-right: 8px;
+  }
+
+  .produk-cart-cart-harga .produk-cart-cart-harga-jumlahbarang {
+    width: 100%; /* Pastikan lebar kontainer mengikuti layar */
+    max-width: none; /* Biarkan lebar fleksibel untuk layar kecil */
+    padding: 0 5px; /* Mengurangi padding lebih jauh untuk tampilan lebih rapat */
+    gap: 2px; /* Mengurangi jarak antar elemen */
+}
+
+.produk-cart-cart-harga-jumlahbarang input[type="number"] {
+    width: 30px; /* Mengecilkan input untuk layar kecil */
+}
+
+.produk-cart-cart-harga-jumlahbarang i {
+    font-size: 14px; /* Menyesuaikan ukuran ikon */
+}
+
+
+
+
+
+
+
+
+
+.cart-total .cart-total-total {
+  width: 100%;
+  padding: 0 10px;
+}
+.cart-total-total .chekbox-total .hapus-total {
+  margin-left: 10px;
+}
+.cart-total-total .cart-total-harga {
+  justify-content: flex-start;
+}
+.cart-total-total .cart-total-harga .ket-total-produk {
+  font-size: 14px;
+}
+.cart-total-total .cart-total-harga .harga-total-produk {
+  font-size: 14px;
+}
+.cart-total-total .cart-total-harga .checkout-total-harga {
+  width: 130px;
+  font-size: 12px;
+}
+  
+}
+
+/* Untuk layar dengan lebar maksimum 375px */
+@media (max-width: 375px) {
+  section.herocategory {
+    height: 360px;
+    background-position: right; /* Fokus background ke kanan */
+    padding: 0 10px;
+  }
+
+  .teks-hero-category {
+    margin-left: 10px;
+    margin-top: 190px; /* Posisi lebih ke bawah */
+    width: 240px;
+  }
+
+  .teks-hero-category h1 {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .search-container-category {
+    margin-left: 10px;
+    margin-top: 0; /* Jarak tambahan untuk ke bawah */
+    width: 240px;
+    height: 32px;
+    padding: 0px 8px;
+  }
+
+
+
+
+
+
+
+
+
+
+  .produk-cart {
+    width: 100%;
+    gap: 3px; /* Jarak antar produk minimum */
+  }
+
+  .produk-cart .produk-cart-cart {
+    height: 100px;
+  }
+
+  .produk-cart-cart .produk-cart-cart-img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .produk-cart-cart-spek .produk-cart-cart-spek-judul {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .produk-cart-cart-harga {
+    margin-right: 5px;
+  }
+
+  .produk-cart-cart-harga-jumlahbarang {
+    width: 100%; /* Pastikan kontainer mengambil seluruh lebar */
+    height: auto; /* Menyesuaikan tinggi dengan konten */
+    padding: 0 10px; /* Berikan sedikit padding supaya tidak terlalu menempel ke tepi */
+    flex-wrap: wrap; /* Membuat elemen-elemen di dalamnya membungkus jika diperlukan */
+    gap: 5px; /* Mengurangi jarak antara elemen */
+    justify-content: center; /* Menyusun elemen agar rata tengah */
+  }
+
+  .produk-cart-cart-harga-jumlahbarang i {
+    font-size: 14px; /* Mengecilkan ukuran ikon untuk layar kecil */
+  }
+
+  .produk-cart-cart-harga-jumlahbarang input[type="number"] {
+    width: 30px; /* Menyesuaikan lebar input agar tidak terlalu besar */
+    font-size: 14px; /* Mengecilkan ukuran font input */
+  }
+
+  
+
+
+
+
+
+
+
+  .cart-total .cart-total-total {
+    width: 100%;
+    padding: 0 5px;
+}
+.cart-total-total .chekbox-total .hapus-total {
+    margin-left: 5px;
+}
+.cart-total-total .cart-total-harga {
+    justify-content: flex-start;
+}
+.cart-total-total .cart-total-harga .ket-total-produk {
+    font-size: 12px;
+}
+.cart-total-total .cart-total-harga .harga-total-produk {
+    font-size: 12px;
+}
+.cart-total-total .cart-total-harga .checkout-total-harga {
+    width: 120px;
+    font-size: 8px;
+}
+.cart-total-total .chekbox-total .ket{
+  font-size: 8px;
+}
+}

@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+body {
+    background-color: #101F64 !important;
+    
+}
+
+.container-login {
+    width: 880px; /* Menentukan lebar container */
+    margin: 0 auto; /* Menempatkan di tengah horizontal dan menambahkan margin atas */
+    background-color: #fff; /* Latar belakang putih */
+    padding-top: 50px;
+    padding-bottom: 10px;
+    height: 825px;
+    
+}
+
+.container-login h1 {
+    text-align: center; /* Teks di tengah */
+    color: #333333; /* Warna teks */
+    margin-bottom: 50px;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+
+.container-login form{
+    margin: 0 auto;
+    width: 560px;
+    display: flex; /* Aktifkan Flexbox untuk form */
+    flex-direction: column; /* Atur elemen menjadi kolom */
+    gap: 20px; /* Tambahkan jarak antar elemen sebesar 20px */
+}
+
+ label {
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+.container-login form .container-input{
+    width: 100%;
+    max-width: 550px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.container-login form .container-input input{
+    width: 100%;
+    height: 36px;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+    padding: 0 10px; 
+}
+.container-login form .container-input input::placeholder {
+    color: #6D6D6D;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .button-login{
+    width: 100%;
+    height: 56px;
+    border-radius: 40px;
+    background-color: #0B1665;
+    color: #FFFFFF;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+
+  .masuk{
+    margin: 50px auto 0 auto;
+    width: 100%;
+    max-width: 560px;
+
+  }
+  .masuk p{
+    color: #333333;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .masuk p a{
+    color: #0B1665;
+  }
+
+
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto 0 auto;
+    width: 100%;
+    max-width: 560px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 2;
+    border-bottom: 3px solid #d1d1d1; /* Warna garis */
+    margin: 0 10px; /* Jarak antara teks "OR" dan garis */
+}
+
+.divider span {
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: #666666; /* Warna teks */
+    margin: 0 15px;
+}
+
+.login-google{
+    display: flex;
+    gap: 10px;
+    width: 290px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    margin: 40px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.login-google img,
+.login-apple img{
+    width: 24px;
+    height: 24px;
+}
+.login-google p,
+.login-apple p{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.64px;
+    color: #333333;
+}
+.login-apple{
+    display: flex;
+    gap: 10px;
+    width: 290px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    margin: 10px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+/* Responsif untuk 1024px */
+@media screen and (max-width: 1024px) {
+    .container-login {
+        width: 80%;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .container-login h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .container-login form {
+        width: 90%;
+        max-width: 560px;
+    }
+
+    .container-input input {
+        width: 100%;
+    }
+
+    .button-login {
+        width: 100%;
+    }
+
+    .masuk p {
+        font-size: 16px;
+    }
+
+    .divider {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .login-google,
+    .login-apple {
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+/* Responsif untuk 992px */
+@media screen and (max-width: 992px) {
+    .container-login {
+        width: 85%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .container-login h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .container-login form {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .container-input input {
+        width: 100%;
+    }
+
+    .button-login {
+        width: 100%;
+    }
+
+    .masuk p {
+        font-size: 16px;
+    }
+
+    .divider {
+        width: 90%;
+        max-width: 480px;
+    }
+
+    .login-google,
+    .login-apple {
+        width: 80%;
+        max-width: 230px;
+    }
+}
+
+/* Responsif untuk 768px */
+@media screen and (max-width: 768px) {
+    .container-login {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container-login h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .container-login form {
+        width: 100%;
+    }
+
+    .container-input input {
+        width: 100%;
+    }
+
+    .button-login {
+        width: 100%;
+    }
+
+    .masuk p {
+        font-size: 14px;
+    }
+
+    .divider {
+        width: 90%;
+        max-width: 440px;
+    }
+
+    .login-google,
+    .login-apple {
+        width: 80%;
+        max-width: 220px;
+    }
+}
+
+/* Responsif untuk 576px */
+@media screen and (max-width: 576px) {
+    .container-login {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container-login h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .container-login form {
+        width: 90%;
+    }
+
+    .container-input input {
+        width: 100%;
+    }
+
+    .button-login {
+        width: 100%;
+    }
+
+    .masuk p {
+        font-size: 14px;
+    }
+
+    .divider {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .login-google,
+    .login-apple {
+        width: 100%;
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container-input {
+        width: 90%; /* Buat lebar input menjadi 90% */
+        max-width: 300px; /* Atur lebar maksimal */
+        margin: 0 auto; /* Tambahkan margin otomatis agar terpusat */
+        box-sizing: border-box; /* Memastikan padding dihitung dalam lebar */
+    }
+
+    .container-input input {
+        width: 100%; /* Pastikan input mengambil seluruh lebar container input */
+        height: 40px;
+        font-size: 14px;
+        padding: 0 10px;
+        box-sizing: border-box; /* Memastikan padding dihitung dalam lebar */
+    }
+
+    .button-login {
+        width: 90%; /* Buat tombol login lebih kecil dari container */
+        max-width: 300px; /* Atur lebar maksimal */
+        margin: 20px auto; /* Tambahkan margin atas dan pusatkan tombol */
+        height: 45px;
+        font-size: 16px;
+        padding: 0 20px;
+        box-sizing: border-box; /* Memastikan padding dihitung dalam lebar */
+    }
+}

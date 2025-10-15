@@ -1,0 +1,1169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", serif;
+}
+body{
+    background-color: #F9FAFB;
+}
+
+
+.checkout{
+    width: 100%;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FAFB;
+    margin-top: 130px;
+   }
+   .checkout .checkout-step{
+       width: 900px;
+       height: 62px;
+       display: flex;
+       justify-content: space-between;
+       margin-left: 15px;
+      margin-right: 15px;
+   }
+   .checkout-step .step-checkout .proses-proses{
+       width: 37px;
+       height: 37px;
+       border-radius: 60px;
+       padding: 8px 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #0B1765;
+       font-family: "Plus Jakarta Sans", serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 21px;
+       color: #FFFFFF;
+       margin: 0 auto 8px auto
+   }
+   
+   
+   
+   .checkout-step .step-checkout .proses{
+       width: 37px;
+       height: 37px;
+       border-radius: 60px;
+       padding: 8px 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #F3F4F6;
+       font-family: "Plus Jakarta Sans", serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 21px;
+       color: #0B1765;
+       margin: 0 auto 8px auto
+   }
+   .checkout-step .step-checkout .teks-step{
+       font-family: "Plus Jakarta Sans", serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 21px;
+       color: #374151;
+       
+   }
+   
+
+
+
+
+
+
+
+
+
+
+   .payment-informasi{
+    width: 1228px;
+    height: 1351px;
+    margin: 0 auto;
+    display: flex;
+    gap: 26px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+   }
+
+
+
+
+
+
+   .payment-informasi .payment-informasi-info{
+    width: 676px;
+    height: 1351px;
+    
+   }
+
+
+
+
+   .payment-informasi-info .payment-book-informasi{
+    width: 100%;
+    border: 1px solid #E5E7EB;
+    border-radius: 24px;
+    padding: 40px; /* Padding atas, bawah, kiri, kanan tetap 40px */
+    margin-bottom: 80px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+   }
+
+   .payment-book-informasi .judul-book-info h1{
+        font-family: "Plus Jakarta Sans", serif;
+       font-weight: 700;
+       font-size: 16px;
+       line-height: 24px;
+       color: #111827;
+   }
+   .payment-book-informasi .judul-book-info p{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6B7280;
+   }
+   .payment-book-informasi hr{
+    background-color: #F3F4F6;
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+   }
+
+
+
+   .payment-book-informasi .info-pribadi{
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    flex-wrap: wrap; /* Memastikan elemen turun jika tidak cukup ruang */
+    align-items: flex-start;
+   }
+
+
+   .info-pribadi .nama-pribadi{
+    flex: 1 1 0; /* Membagi elemen agar fleksibel dengan lebar konsisten */
+    max-width: 136.5px; /* Memberikan batas maksimum lebar */
+    box-sizing: border-box; /* Memastikan padding tidak memengaruhi ukuran total */
+    word-wrap: break-word;
+   }
+   .info-pribadi .email-pribadi{
+    flex: 1 1 0; /* Membagi elemen agar fleksibel dengan lebar konsisten */
+    max-width: 214px; /* Memberikan batas maksimum lebar */
+    box-sizing: border-box; 
+    word-wrap: break-word;
+   }
+   .info-pribadi .nomor-pribadi{
+    flex: 1 1 0; /* Membagi elemen agar fleksibel dengan lebar konsisten */
+    max-width: 136.5px; /* Memberikan batas maksimum lebar */
+    box-sizing: border-box; 
+    word-wrap: break-word;
+   }
+
+
+   .nama-pribadi .nama-nama,
+   .email-pribadi .email-email,
+   .nomor-pribadi .nomor-nomor{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #111827;
+    margin-top: 8px;
+    word-wrap: break-word;
+   }
+
+
+
+   .info-pribadi .nama-pribadi h1,
+   .info-pribadi .email-pribadi h1,
+   .info-pribadi .nomor-pribadi h1{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6B7280;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .payment-informasi-info .payment-info-detail{
+    width: 100%;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+    border: 1px solid #E5E7EB;
+    border-radius: 24px;
+    padding: 40px;
+   }
+
+   .payment-info-detail .detail-judul h1 {
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+   }
+   .payment-info-detail .detail-judul p{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6B7280;
+   }
+   .payment-info-detail hr{
+    width: 100%;
+    background-color: #F3F4F6;
+    border: none;
+    height: 1px;
+    margin: 30px 0;
+   }
+
+   .pay-option h1{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6B7280;
+    margin-bottom: 5px;
+   }
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+   .pay-option .down-full{
+    display: flex;
+    justify-content: space-between;
+   }
+   /*
+   .pay-down:hover,
+   .pay-full:hover{
+    width: 255px;
+    height: 84px;
+    background-color: #0B1765;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F9FAFB;
+    margin-bottom: 5px;
+   }
+  
+   .pay-down-teks p:hover{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F9FAFB;
+    margin-bottom: 5px;
+   }
+     /*
+    .down-full .pay-down .pay-down-teks .down-harga{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F9FAFB;
+   }
+   .down-full .pay-down .down-icon{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  
+}
+.down-full .pay-down .down-icon i{
+  width: 5px;
+  height: 5px;
+  color: #0B1765; 
+  margin-left: 2px;
+}
+
+*/
+
+
+
+/* Container */
+.pay-option .down-full {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Pay Option Styles */
+.pay-full,
+.pay-down {
+  width: 255px;
+  height: 84px;
+  border: 1px solid #E5E7EB;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pay-full .pay-full-teks p,
+.pay-down .pay-down-teks p {
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.pay-full .pay-full-teks .full-harga,
+.pay-down .pay-down-teks .down-harga {
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #374151;
+}
+
+/* Hover Effect */
+.pay-full:hover,
+.pay-down:hover {
+  background-color: #0B1765;
+  color: #F9FAFB; /* Mengubah warna teks */
+}
+
+/* Active State */
+.pay-full.active,
+.pay-down.active {
+  background-color: #0B1765;
+  color: #F9FAFB; /* Mengubah warna teks */
+  border-color: #0B1765;
+}
+
+/* Override for Text Inside */
+.pay-full.active .pay-full-teks p,
+.pay-down.active .pay-down-teks p,
+.pay-full:hover .pay-full-teks p,
+.pay-down:hover .pay-down-teks p {
+  color: #F9FAFB; /* Pastikan teks di dalam berubah */
+}
+
+.pay-full.active .full-harga,
+.pay-down.active .down-harga,
+.pay-full:hover .full-harga,
+.pay-down:hover .down-harga {
+  color: #F9FAFB; /* Warna teks harga juga berubah */
+}
+
+
+/* Button Styles */
+.ketentuan {
+  width: 100%;
+  height: 48px;
+  background-color: #D1D5DB;
+  border-radius: 60px;
+  padding: 12px 18px;
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9CA3AF;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active Button */
+.ketentuan.active {
+  background-color: #0B1765;
+  color: #F9FAFB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Default Icon Styling (Hidden by Default) */
+.pay-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #D1D5DB;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Default Icon Styling (Icon Hidden Initially) */
+.pay-icon i {
+  color: #0B1765;
+  font-size: 12px;
+  display: none; /* Initially hidden */
+}
+
+/* Show Icon on Hover */
+.pay-down:hover .pay-icon i,
+.pay-full:hover .pay-icon i {
+  display: flex; /* Show icon on hover */
+}
+
+/* Show Icon on Active */
+.pay-down.active .pay-icon i,
+.pay-full.active .pay-icon i {
+  display: flex; /* Keep icon visible on active */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.file-input-container {
+  width: 100%;
+  height: 48px;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  display: inline-block;
+  line-height: 24px;
+}
+input[type="file"] {
+  display: none; /* Sembunyikan input file */
+}
+.custom-file-label {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #F3F4F6;
+  border: 1px solid #0B1765;
+  color:#0B1765;
+  border-radius: 60px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 152px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+.custom-file-label:hover {
+  background-color:  #0B1765;
+  color: #F9FAFB;
+}
+.file-name {
+    font-weight: 500;
+  font-size: 12px;
+  line-height: 15.12px;
+  color: #6B7280;
+}
+
+.payment-info-detail .pay-method .met-judul h1{
+  font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6B7280;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+
+
+
+.pay-met{
+  width: 366px;
+  height: 84px;
+  border: 1px solid #E5E7EB;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.pay-met .met-icon{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+border: 1px solid #E5E7EB;
+}
+.pay-met .pay-met-teks p{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #374151;
+  margin-bottom: 5px;
+}
+.pay-met .pay-met-teks .method{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #374151;
+}
+
+
+
+
+.pay-met:hover {
+  background-color: #F9FAFB;
+  border-color: #0B1765;
+}
+
+.pay-met.active {
+  background-color: #0B1765;
+  border-color: #0B1765;
+  color: #F9FAFB;
+}
+
+.pay-met-teks p,
+.pay-met-teks .method {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #374151;
+  margin: 0;
+}
+
+.pay-met.active .pay-met-teks p,
+.pay-met.active .pay-met-teks .method {
+  color: #F9FAFB;
+}
+
+/* Icon Styling */
+.met-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #D1D5DB;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.met-icon i {
+  color: #0B1765;
+  font-size: 12px;
+  display: none;
+}
+
+.pay-met:hover .met-icon i,
+.pay-met.active .met-icon i {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  width: 100%;
+  margin-top: 40px;
+  padding: 24px;
+  box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+  overflow: hidden; /* Mencegah elemen keluar dari container */
+  flex-wrap: wrap; /* Memastikan elemen turun jika tidak cukup ruang */
+}
+.card .card-holder-name .name-judul{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6B7280;
+}
+.card .card-holder-name input{
+  width: 100%;
+  height: 51px;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.card .number-date-cvv{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.card .number-date-cvv p{
+  font-family: "Plus Jakarta Sans", serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6B7280;
+  margin-bottom: 5px;
+}
+
+.number-date-cvv .number .isi-number{
+  width: 210px;
+  height: 51px;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+.number-date-cvv .date .isi-date{
+  width: 120px;
+  height: 51px;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+.number-date-cvv .cvv .isi-cvv{
+  width: 120px;
+  height: 51px;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .payment-informasi .payment-informasi-summary{
+    width: 676px;
+    height: 1087px;
+   }
+   .payment-informasi-summary .summary{
+    width: 100%;
+    height: 637px;
+    margin-bottom: 5px;
+   }
+   
+   .payment-informasi-summary .checkout-informasi-summary{
+    width: 100%;
+    height: 637px;
+    padding: 40px;
+    margin-bottom: 5px;
+}
+
+.checkout-informasi-summary .summary-judul h1{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+}
+.checkout-informasi-summary .summary-judul .jumlah-barang{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6B7280;
+}
+.summary-judul hr{
+    width: 100%;
+    background-color: #F3F4F6;
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+}
+.summary-diskon{
+    width: 100%;
+    height: 75px;
+}
+.summary-diskon .judul-diskon{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6B7280;
+}
+.summary-diskon .isi-diskon{
+    width: 100%;
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.summary-diskon .isi-diskon button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2A5089;
+    
+}
+
+
+.isi-diskon .name-diskon{
+    width: 340px;
+}
+
+ .isi-diskon .name-diskon .input-code{
+    width: 380px;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #111827;
+  }
+  
+  .name-diskon .input-code::placeholder {
+    color: #b3c3dd;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .checkout-informasi-summary .harga{
+    width: 100%;
+    height: 240px;
+    margin-top: 20px;
+  }
+  .harga .total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .harga .total .total-name{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B7280;
+  }
+  .harga .total .total-angka{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+  }
+  .harga .total .tax-name{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B7280;
+  }
+  .harga .total .tax-angka{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+  }
+  .harga .total .diskon-name{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B7280;
+  }
+  .harga .total .diskon-angka{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+  }
+.harga hr{
+  width: 100%;
+  background-color: #F3F4F6;
+  border: none;
+  height: 1px;
+  margin: 20px 0;
+  margin-bottom: 10px;
+}
+.harga .subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+.harga .subtotal .subtotal-name{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+  }
+.harga .subtotal .subtotal-angka{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+  }
+  .checkout-informasi-summary .total-pay{
+    width: 100%;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .total-pay .total-pay-name{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #6B7280;
+  }
+  .total-pay .total-pay-angka{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #111827;
+  }
+  .checkout-informasi-summary button{
+    width: 100%;
+    height: 48px;
+    border-radius: 60px;
+    padding: 12px 18px;
+    background-color: #0B1765;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F9FAFB;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+   .payment-informasi-summary .policy{
+    width: 100%;
+    height: 360px;
+    border: 1px solid #E5E7EB;
+    border-radius: 24px;
+    padding: 40px;
+   }
+   .payment-informasi-summary .policy h1{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+   }
+   .payment-informasi-summary .policy p{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6B7280;
+    text-align: justify;
+    margin-bottom: 20px;
+   }
+   .policy a{
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2A5089;
+   }
+
+
+
+
+
+
+
+
+
+   @media screen and (max-width: 1024px) {
+    .checkout .checkout-step {
+      width: 90%;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 12px;
+    }
+
+
+
+
+
+
+    .payment-informasi {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .payment-informasi-info,
+  .payment-informasi-summary,
+  .policy {
+      max-width: 80%;
+      margin: 10px auto;
+  }
+  }
+
+
+
+
+
+
+  /* Responsif untuk 992px */
+  @media screen and (max-width: 992px) {
+    .checkout .checkout-step {
+      width: 85%;
+      gap: 10px;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 28px;
+      height: 28px;
+      font-size: 11px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 11px;
+    }
+
+
+
+
+
+
+    .payment-informasi-info,
+    .payment-informasi-summary,
+    .policy {
+        max-width: 85%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    .payment-informasi-info,
+    .payment-informasi-summary,
+    .policy {
+        max-width: 90%;
+    }
+
+    .payment-informasi-summary {
+        order: 2;
+    }
+
+    .policy {
+        order: 3;
+    }
+}
+
+
+
+
+
+
+    /* Responsif untuk 576px */
+    @media screen and (max-width: 576px) {
+      .checkout .checkout-step {
+        width: 100%;
+        gap: 6px;
+      }
+    
+      .checkout-step .step-checkout .proses,
+      .checkout-step .step-checkout .proses-proses {
+        width: 22px;
+        height: 22px;
+        font-size: 9px;
+      }
+    
+      .checkout-step .step-checkout .teks-step {
+        font-size: 9px;
+      }
+
+
+
+
+
+
+
+
+
+      .payment-informasi-info,
+      .payment-informasi-summary,
+      .policy {
+          max-width: 95%;
+      }
+  
+      .payment-informasi {
+          gap: 10px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+     /* Responsif untuk 375px */
+  @media screen and (max-width: 375px) {
+    .checkout .checkout-step {
+      width: 100%;
+      gap: 4px;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 20px;
+      height: 20px;
+      font-size: 8px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 8px;
+    }
+
+
+
+
+
+
+
+    .payment-informasi-info,
+    .payment-informasi-summary,
+    .policy {
+        max-width: 100%;
+    }
+
+    .payment-informasi-info,
+    .payment-informasi-summary,
+    .policy {
+        padding: 15px;
+    }
+
+    .payment-informasi h1,
+    .payment-informasi p {
+        font-size: 14px;
+    }
+
+    .payment-informasi input,
+    .payment-informasi button {
+        font-size: 12px;
+    }
+  }

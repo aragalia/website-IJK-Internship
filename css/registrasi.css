@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+body {
+    background-color: #101F64 !important;
+    
+}
+
+.container-regis {
+    width: 880px; /* Menentukan lebar container */
+    margin: 0 auto 0 auto; /* Menempatkan di tengah horizontal dan menambahkan margin atas */
+    background-color: #fff; /* Latar belakang putih */
+    padding-top: 50px;
+    padding-bottom: 10px;
+    
+    
+}
+
+.container-regis h1 {
+    text-align: center; /* Teks di tengah */
+    color: #333333; /* Warna teks */
+    margin-bottom: 50px;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+
+.container-regis .form{
+    margin: 0 auto;
+    width: 560px;
+    display: flex; /* Aktifkan Flexbox untuk form */
+    flex-direction: column; /* Atur elemen menjadi kolom */
+    gap: 20px; /* Tambahkan jarak antar elemen sebesar 20px */
+}
+
+.container-regis .form h2{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.container-regis .container-input{
+    width: 550px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-regis .container-input input{
+    width: 530px;
+    height: 36px;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+    padding: 0 10px; 
+}
+.container-regis .container-input input::placeholder {
+    color: #6D6D6D;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .signup{
+    width: 100%;
+    height: 56px;
+    border-radius: 40px;
+    background-color: #0B1665;
+    color: #FFFFFF;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+
+  .masuk{
+    margin: 50px auto 0 auto;
+    width: 560px;
+
+  }
+  .masuk p{
+    color: #333333;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .masuk p a{
+    color: #0B1665;
+  }
+
+
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto 0 auto;
+    width: 560px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 2;
+    border-bottom: 3px solid #d1d1d1; /* Warna garis */
+    margin: 0 10px; /* Jarak antara teks "OR" dan garis */
+}
+
+.divider span {
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: #666666; /* Warna teks */
+    margin: 0 15px;
+}
+
+.signup-google{
+    display: flex;
+    gap: 10px;
+    width: 290px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    margin: 40px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.signup-google img,
+.signup-apple img{
+    width: 24px;
+    height: 24px;
+}
+.signup-google p,
+.signup-apple p{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.64px;
+    color: #333333;
+}
+.signup-apple{
+    display: flex;
+    gap: 10px;
+    width: 290px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    margin: 10px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-regis h6{
+    text-align: center;
+    margin: 40px auto 0 auto;
+    width: 560px;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+.container-regis h6 a{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* Default CSS Sudah Ditulis, Ini Tambahan Responsive */
+
+/* Untuk layar dengan lebar maksimum 1024px */
+@media (max-width: 1024px) {
+    .container-regis {
+      width: 90%; /* Lebar lebih fleksibel */
+      padding: 20px;
+    }
+  
+    .container-regis h1 {
+      font-size: 36px;
+      line-height: 54px;
+      margin-bottom: 30px;
+    }
+  
+    .container-regis .form {
+      width: 100%;
+    }
+  
+    .container-regis .container-input {
+      width: 100%;
+    }
+  
+    .container-regis .container-input input {
+      width: 95%;
+    }
+  }
+  
+  /* Untuk layar dengan lebar maksimum 992px */
+  @media (max-width: 992px) {
+    .container-regis {
+        width: 85%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .container-regis h1 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+  
+    .signup-google,
+    .signup-apple {
+      width: 260px; /* Lebar tombol lebih kecil */
+    }
+  }
+  
+  /* Untuk layar dengan lebar maksimum 768px */
+  @media (max-width: 768px) {
+    .container-regis {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  
+    .container-regis h1 {
+      font-size: 28px;
+      line-height: 42px;
+    }
+  
+    .container-regis .form {
+      gap: 15px;
+      width: 100%;
+    }
+  
+    .container-regis .container-input {
+      height: 48px;
+    }
+  
+    .container-regis .container-input input {
+      font-size: 14px;
+      padding: 0 8px;
+    }
+    .masuk {
+        width: 100%;
+      }
+    .signup-google,
+    .signup-apple {
+      width: 240px;
+      height: 36px;
+    }
+  
+    .divider {
+        width: 90%;
+        max-width: 440px;
+    }
+    .divider span {
+      font-size: 14px;
+    }
+    .container-regis h6 {
+        font-size: 10px;
+        line-height: 15px;
+        width: 100%;
+      }
+  }
+  
+  /* Untuk layar dengan lebar maksimum 576px */
+  @media (max-width: 576px) {
+    .container-regis {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container-regis h1 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  .form {
+    width: 90%;
+  }
+
+  .masuk {
+    width: 100%;
+  }
+    .signup-google,
+    .signup-apple {
+      width: 200px;
+      height: 34px;
+      gap: 8px;
+    }
+  
+    .signup-google img,
+    .signup-apple img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .signup-google p,
+    .signup-apple p {
+      font-size: 12px;
+    }
+    .divider {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .container-regis h6 {
+      font-size: 10px;
+      line-height: 15px;
+      width: 100%;
+    }
+  }
+  
+  /* Untuk layar dengan lebar maksimum 375px */
+  @media (max-width: 375px) {
+    .container-regis {
+      margin: 20px auto;
+      padding: 10px;
+    }
+  
+    .container-regis h1 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  
+    .container-regis .form {
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .container-regis .container-input {
+      height: 40px;
+    }
+  
+    .container-regis .container-input input {
+      font-size: 12px;
+      padding: 0 5px;
+    }
+   .signup{
+    width: 90%; /* Buat tombol login lebih kecil dari container */
+        max-width: 300px; /* Atur lebar maksimal */
+        margin: 20px auto; /* Tambahkan margin atas dan pusatkan tombol */
+        height: 45px;
+        font-size: 16px;
+        padding: 0 20px;
+        box-sizing: border-box; 
+   }
+    .signup-google,
+    .signup-apple {
+      width: 180px;
+      height: 32px;
+    }
+  
+    .signup-google p,
+    .signup-apple p {
+      font-size: 10px;
+    }
+  
+    .masuk p {
+      font-size: 14px;
+    }
+  
+    .divider span {
+      font-size: 12px;
+    }
+  }
+  

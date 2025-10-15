@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", serif;
+}
+body{
+    background-color: #F9FAFB;
+}
+
+
+
+
+
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start; /* Memastikan elemen tidak sejajar secara vertikal */
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+    padding: 28px;
+    
+}
+.container .container-kiri{
+    width: 468px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px 15px;
+    box-shadow: 2px 4px 10px  #0000003D;
+}
+.profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.profile img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.nama-email-profile .name{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #1F2937;
+}
+.nama-email-profile .email{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6B7280;
+}
+hr{
+    background-color: #E5E7EB;
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+    width: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container-myprofil {
+    width: 320px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.myaccount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.myaccount .myaccount-kiri {
+    display: flex;
+    gap: 8px;
+}
+.myaccount i,
+.notif i {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6B7280;
+}
+.container-myprofil p,
+.notif p {
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1F2937;
+}
+.isi-myaccount {
+    display: none;
+    margin-left: 32px;
+}
+.isi-myaccount-profil,
+.isi-myaccount-add,
+.isi-myaccount-pw,
+.isi-myaccount-pesanan {
+    width: 320px;
+    padding: 10px;
+    cursor: pointer;
+}
+.arrow {
+    transition: transform 0.3s ease;
+}
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+
+.notif{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.container-pesanansaya{
+    width: 730px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 4px 10px  #0000003D;
+    margin-bottom: 20px;
+}
+.container-pesanansaya a{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+
+.produk-pesanansaya {
+    background-color: #FFFFFF;
+    padding: 30px;
+    width: 730px;
+    display: flex; /* Flexbox untuk membuat konten di tengah */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    height: 300px; /* Tambahkan tinggi untuk demonstrasi */
+}
+
+.isi-kosong {
+    display: flex; /* Flexbox untuk membuat kolom */
+    flex-direction: column; /* Atur agar anak-anak berada dalam kolom */
+    align-items: center; /* Pusatkan isi di tengah */
+    text-align: center; /* Pastikan teks h1 sejajar di tengah */
+    width: 100%;
+}
+
+.isi-kosong img {
+    width: 91px;
+    height: 91px;
+    margin-bottom: 10px; /* Spasi antara gambar dan teks */
+}
+
+.isi-kosong h1 {
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.52px;
+    color: #111827;
+}
+
+
+
+
+

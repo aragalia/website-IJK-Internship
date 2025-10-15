@@ -1,0 +1,863 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", serif;
+}
+body{
+    background-color: #F9FAFB;
+}
+
+
+
+
+
+.checkout{
+    width: 100%;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FAFB;
+    margin-top: 130px;
+   }
+   .checkout .checkout-step{
+       width: 900px;
+       height: 62px;
+       display: flex;
+       justify-content: space-between;
+       margin-left: 15px;
+       margin-right: 15px;
+   }
+   .checkout-step .step-checkout .proses-proses{
+       width: 37px;
+       height: 37px;
+       border-radius: 60px;
+       padding: 8px 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #0B1765;
+       font-family: "Plus Jakarta Sans", serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 21px;
+       color: #FFFFFF;
+       margin: 0 auto 8px auto
+   }
+   
+   
+   
+   .checkout-step .step-checkout .proses{
+       width: 37px;
+       height: 37px;
+       border-radius: 60px;
+       padding: 8px 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #F3F4F6;
+       font-family: "Plus Jakarta Sans", serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 21px;
+       color: #0B1765;
+       margin: 0 auto 8px auto
+   }
+   .checkout-step .step-checkout .teks-step{
+       font-family: "Plus Jakarta Sans", serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 21px;
+       color: #374151;
+       
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .benner-confirm{
+    width: 100%;
+    height: 422px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Memberikan sedikit padding di kiri dan kanan */
+    box-sizing: border-box;
+   }
+   .benner-confirm .isi-benner h1{
+        font-family: "Plus Jakarta Sans", serif;
+       font-weight: 700;
+       font-size: 48px;
+       line-height: 60.48px;
+       color: #0B1765;
+       text-align: center;
+       margin: 0;
+   }
+   .benner-confirm .isi-benner p{
+    font-family: "Plus Jakarta Sans", serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 27px;
+   color: #6B7280;
+   text-align: center;
+   margin: 16px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+.body-isi-confirm{
+    width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+
+
+
+
+
+
+
+.info-pesanan{
+    width: 700px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+}
+.info-pesanan, .invoice, .order-sumarry, .payment-details, .order-list, .confirm-policy, .next-steps {
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+    margin: 0 auto;
+    border-radius: 24px;
+    padding: 40px;
+}
+.invoice{
+ 
+    height: 224px;
+    border-radius: 24px;
+    padding: 40px;
+    background-color: #0B1765;
+    
+}
+.invoice h5{
+   font-family: "Plus Jakarta Sans", serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: #F9FAFB;
+   text-align: justify;
+   margin-bottom: 24px;
+}
+.invoice button{
+    width: 210px;
+    height: 48px;
+    border-radius: 60px;
+    padding: 12px 18px;
+    background-color: #F9FAFB;
+    font-family: "Plus Jakarta Sans", serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   color: #0B1765;
+   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.order-sumarry,
+.payment-details,
+.order-list,
+.confirm-policy{
+    border: 1px solid #E5E7EB;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+    border-radius: 24px;
+    padding: 40px;
+    margin-top: 25px;
+}
+.payment-details .judul-info{
+    display: flex;
+    justify-content: space-between;
+}
+.payment-details .judul-info i{
+    color: #6B7280;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.judul-info h2{
+    font-family: "Plus Jakarta Sans", serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   color: #111827;
+}
+.judul-info h6{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6B7280;
+}
+.order-sumarry hr,
+.payment-details hr{
+    background-color: #F3F4F6;
+    border: none;
+    height: 1px;
+    margin-top: 25px;
+}
+
+
+
+
+.isi-summary h3,
+.isi-payment h3{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6B7280;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.isi-summary p,
+.isi-payment p{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111827;
+    
+}
+
+
+
+
+.order-list .judul-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.order-list .view-detail{
+ display: flex;
+ gap: 10px;
+ cursor: pointer;
+}
+.view-detail h1{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2A5089;
+}
+.view-detail i{
+    color: #2A5089;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+.order-list-order {
+    width: 100%;
+    padding: 16px 16px 0 16px;
+    
+}
+.order-list-order hr {
+    background-color: #F3F4F6;
+    border: none;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+.order-list-order-order {
+    display: flex;
+    gap: 10px;
+}
+
+.order-img img {
+    width: 46px;
+    height: 46px;
+}
+
+.order-ket {
+    width: 100%;
+}
+
+.ket-judul {
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 16px;
+    color: #000000;
+}
+.ket-harga,
+.ket-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.ket-harga-name,
+.ket-total-name {
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 12px;
+    color: #111827;
+}
+
+.ket-harga-angka,
+.ket-total-angka {
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #111827;
+}
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+#paymentContent,
+#orderContent {
+    display: none;
+}
+
+#paymentContent.show,
+#orderContent.show {
+    display: block;
+    
+}
+
+
+
+
+
+
+.confirm-policy h1{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111827;
+}
+.confirm-policy h2{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6B7280;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.confirm-policy a{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2A5089;
+}
+
+
+
+
+
+
+
+
+
+.next-steps{
+    width: 518px;
+    align-items: center;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+}
+.next-steps .isi-next{
+    width: 348px;
+    margin: 30px auto;
+}
+.next-steps h4{
+    font-family: "Plus Jakarta Sans", serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   color:#111827;
+}
+.next-steps p{
+    font-family: "Plus Jakarta Sans", serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color:#6B7280;
+   text-align: justify;
+}
+ .teks-nextsteps button{
+    width: 348px;
+   height: 48px;
+    border-radius: 60px;
+    border: 1px solid #0B1765;
+    padding: 12px 18px;
+    font-family: "Plus Jakarta Sans", serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   color: #0B1765;
+   margin-top: 30px;
+   background-color: #F9FAFB;
+   cursor: pointer;
+ }
+.support-info{
+    margin-top: 150px;
+}
+.support-info span{
+    color: #0B1765;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .checkout .checkout-step {
+      width: 90%;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 12px;
+    }
+
+
+
+
+    .benner-confirm {
+        height: auto; /* Mengatur tinggi otomatis agar fleksibel */
+        padding: 20px;
+    }
+    .benner-confirm .isi-benner h1 {
+        font-size: 40px; /* Mengecilkan ukuran font */
+        line-height: 50px; /* Menyesuaikan jarak antar baris */
+    }
+    .benner-confirm .isi-benner p {
+        font-size: 16px; /* Mengecilkan ukuran font */
+        line-height: 24px; /* Menyesuaikan jarak antar baris */
+    }
+
+
+
+
+
+
+    .body-isi-confirm {
+        flex-direction: column; /* Semua container berada dalam satu kolom */
+        align-items: center;
+        gap: 16px; /* Mengurangi jarak antar container */
+    }
+
+    .info-pesanan, .invoice, .order-sumarry, .payment-details, .order-list, .confirm-policy, .next-steps {
+        width: 90%; /* Semua container memiliki lebar yang sama */
+        margin: 0 auto;
+        padding: 20px; /* Padding dikurangi untuk ukuran kecil */
+    }
+
+    .invoice h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .invoice button {
+        width: 100%;
+        max-width: 180px;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .next-steps {
+        margin-top: 16px;
+    }
+
+    .next-steps .isi-next {
+        max-width: 100%;
+    }
+
+    .teks-nextsteps button {
+        max-width: 100%;
+    }
+
+    .confirm-policy h1, .confirm-policy h2 {
+        text-align: center;
+    }
+
+    
+}
+
+
+
+
+
+
+
+ /* Responsif untuk 992px */
+ @media screen and (max-width: 992px) {
+    .checkout .checkout-step {
+      width: 85%;
+      gap: 10px;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 28px;
+      height: 28px;
+      font-size: 11px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 11px;
+    }
+
+
+
+
+
+    .body-isi-confirm {
+        flex-direction: column; /* Semua container berada dalam satu kolom */
+        align-items: center;
+        gap: 16px; /* Mengurangi jarak antar container */
+    }
+
+    .info-pesanan, .invoice, .order-sumarry, .payment-details, .order-list, .confirm-policy, .next-steps {
+        width: 90%; /* Semua container memiliki lebar yang sama */
+        margin: 0 auto;
+        padding: 20px; /* Padding dikurangi untuk ukuran kecil */
+    }
+
+    .invoice h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .invoice button {
+        width: 100%;
+        max-width: 180px;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .next-steps {
+        margin-top: 16px;
+    }
+
+    .next-steps .isi-next {
+        max-width: 100%;
+    }
+
+    .teks-nextsteps button {
+        max-width: 100%;
+    }
+
+    .confirm-policy h1, .confirm-policy h2 {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+
+    .benner-confirm {
+        height: auto; /* Tetap fleksibel */
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    .benner-confirm .isi-benner h1 {
+        font-size: 36px; /* Mengecilkan ukuran font */
+        line-height: 46px;
+    }
+    .benner-confirm .isi-benner p {
+        font-size: 14px; /* Mengecilkan ukuran font */
+        line-height: 22px;
+    }
+
+
+
+
+    .body-isi-confirm {
+        flex-direction: column; /* Semua container berada dalam satu kolom */
+        align-items: center;
+        gap: 16px; /* Mengurangi jarak antar container */
+    }
+
+    .info-pesanan, .invoice, .order-sumarry, .payment-details, .order-list, .confirm-policy, .next-steps {
+        width: 90%; /* Semua container memiliki lebar yang sama */
+        margin: 0 auto;
+        padding: 20px; /* Padding dikurangi untuk ukuran kecil */
+    }
+
+    .invoice h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .invoice button {
+        width: 100%;
+        max-width: 180px;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .next-steps {
+        margin-top: 16px;
+    }
+
+    .next-steps .isi-next {
+        max-width: 100%;
+    }
+
+    .teks-nextsteps button {
+        max-width: 100%;
+    }
+
+    .confirm-policy h1, .confirm-policy h2 {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+ /* Responsif untuk 576px */
+ @media screen and (max-width: 576px) {
+    .checkout .checkout-step {
+      width: 100%;
+      gap: 6px;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 22px;
+      height: 22px;
+      font-size: 9px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 9px;
+    }
+
+
+
+
+
+
+    .benner-confirm {
+        height: auto; /* Tinggi fleksibel */
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    .benner-confirm .isi-benner h1 {
+        font-size: 32px; /* Mengecilkan ukuran font */
+        line-height: 42px;
+    }
+    .benner-confirm .isi-benner p {
+        font-size: 14px; /* Mengecilkan ukuran font */
+        line-height: 20px;
+    }
+
+
+
+
+
+
+    .body-isi-confirm {
+        flex-direction: column; /* Semua container berada dalam satu kolom */
+        align-items: center;
+        gap: 16px; /* Mengurangi jarak antar container */
+    }
+
+    .info-pesanan, .invoice, .order-sumarry, .payment-details, .order-list, .confirm-policy, .next-steps {
+        width: 90%; /* Semua container memiliki lebar yang sama */
+        margin: 0 auto;
+        padding: 20px; /* Padding dikurangi untuk ukuran kecil */
+    }
+
+    .invoice h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .invoice button {
+        width: 100%;
+        max-width: 180px;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .next-steps {
+        margin-top: 16px;
+    }
+
+    .next-steps .isi-next {
+        max-width: 100%;
+    }
+
+    .teks-nextsteps button {
+        max-width: 100%;
+    }
+
+    .confirm-policy h1, .confirm-policy h2 {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+ /* Responsif untuk 375px */
+ @media screen and (max-width: 375px) {
+    .checkout .checkout-step {
+      width: 100%;
+      gap: 4px;
+    }
+  
+    .checkout-step .step-checkout .proses,
+    .checkout-step .step-checkout .proses-proses {
+      width: 20px;
+      height: 20px;
+      font-size: 8px;
+    }
+  
+    .checkout-step .step-checkout .teks-step {
+      font-size: 8px;
+    }
+
+
+
+
+
+
+
+    .benner-confirm {
+        height: auto; /* Tinggi fleksibel */
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    .benner-confirm .isi-benner h1 {
+        font-size: 28px; /* Mengecilkan ukuran font */
+        line-height: 38px;
+    }
+    .benner-confirm .isi-benner p {
+        font-size: 12px; /* Mengecilkan ukuran font */
+        line-height: 18px;
+    }
+
+
+
+
+
+
+    .body-isi-confirm {
+        flex-direction: column; /* Semua container berada dalam satu kolom */
+        align-items: center;
+        gap: 16px; /* Mengurangi jarak antar container */
+    }
+
+    .info-pesanan, .invoice, .order-sumarry, .payment-details, .order-list, .confirm-policy, .next-steps {
+        width: 90%; /* Semua container memiliki lebar yang sama */
+        margin: 0 auto;
+        padding: 20px; /* Padding dikurangi untuk ukuran kecil */
+    }
+
+    .invoice h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .invoice button {
+        width: 100%;
+        max-width: 180px;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .next-steps {
+        margin-top: 16px;
+    }
+
+    .next-steps .isi-next {
+        max-width: 100%;
+    }
+
+    .teks-nextsteps button {
+        max-width: 100%;
+    }
+
+    .confirm-policy h1, .confirm-policy h2 {
+        text-align: center;
+    }
+}
+
+

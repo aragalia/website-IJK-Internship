@@ -1,0 +1,831 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Plus Jakarta Sans", serif;
+}
+body{
+    background-color: #F9FAFB;
+}
+
+
+
+
+
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start; /* Memastikan elemen tidak sejajar secara vertikal */
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+    padding: 28px;
+    
+}
+.container .container-kiri{
+    width: 468px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px 15px;
+    box-shadow: 2px 4px 10px  #0000003D;
+}
+.profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.profile img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.nama-email-profile .name{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #1F2937;
+}
+.nama-email-profile .email{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6B7280;
+}
+hr{
+    background-color: #E5E7EB;
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+    width: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container-myprofil {
+    width: 320px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.myaccount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.myaccount .myaccount-kiri {
+    display: flex;
+    gap: 8px;
+}
+.myaccount i,
+.notif i {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6B7280;
+}
+.container-myprofil p,
+.notif p {
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1F2937;
+}
+.isi-myaccount {
+    display: none;
+    margin-left: 32px;
+}
+.isi-myaccount-profil,
+.isi-myaccount-add,
+.isi-myaccount-pw,
+.isi-myaccount-pesanan {
+    width: 320px;
+    padding: 10px;
+    cursor: pointer;
+}
+.isi-myaccount-profil p:hover,
+.isi-myaccount-add p:hover,
+.isi-myaccount-pw p:hover,
+.isi-myaccount-pesanan p:hover {
+    color:#0B1765 ;
+}
+.arrow {
+    transition: transform 0.3s ease;
+}
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+
+.notif{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .container-kanan{
+    width: 730px;
+    height: 642px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px;
+}
+.isi-profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.isi-profile img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.isi-profile .nama-nama{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F2937;
+}
+.isi-profile .email-email{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+}
+.container-kanan hr{
+    background-color: #E5E7EB;
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+    width: 100%;
+}
+.isi-nama,
+.isi-email,
+.isi-nomor,
+.isi-location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.judul-judul{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F2937;
+}
+.isi-isi{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B5563;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css my profile */
+
+
+.container .container-kanan-myprofile{
+    width: 730px;
+    height: 642px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px;
+}
+.edit-profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.edit-profil {
+    position: relative; /* Container untuk posisi elemen child */
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.edit-profil img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.edit-profil i {
+    position: absolute; /* Posisi ikon diatur relatif terhadap container */
+    bottom: 0; /* Pindahkan ikon ke pojok kanan bawah */
+    right: 0; /* Pindahkan ikon ke pojok kanan bawah */
+    background-color: #ffffff; /* Tambahkan background putih agar terlihat seperti lingkaran */
+    color: #000000; /* Warna ikon */
+    border-radius: 50%; /* Jadikan lingkaran */
+    padding: 5px; /* Spasi internal */
+    font-size: 12px; /* Ukuran ikon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+.edit-profile .nama-nama{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F2937;
+}
+.edit-profile .email-email{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+}
+.container-kanan hr,
+.container-kanan-myprofile hr{
+    background-color: #E5E7EB;
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+    width: 100%;
+}
+.edit-nama,
+.edit-email,
+.edit-nomor,
+.edit-location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.judul-judul{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F2937;
+}
+.isi-isi{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B5563;
+}
+
+.simpan-myprofile{
+    width: 137px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: #0B1765;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* css address */
+
+
+.container .container-kanan-address{
+    width: 730px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px;
+}
+.judul-address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.judul-name-add{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F2937;
+}
+.tambah-add{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 183px;
+    height: 36px;
+    border-radius: 6px;
+    justify-content: center;
+    background-color: #0B1765;
+    color: #FFFFFF;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.daftar-alamat{
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+}
+.alamat-tersimpan{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid #0B1765;
+    align-items: center;
+    width: 100%;
+    height: 142px;
+    box-sizing: border-box;
+}
+.title-detail-telpon{
+    margin-left: 20px;
+}
+.title-detail-telpon .title{
+    color: #1F2937;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+.title-detail-telpon .detail,
+.title-detail-telpon .telpon{
+    color: #1F2937;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.gambar-maps {
+    width: 166px;
+    height: 140px;
+    
+}
+.gambar-maps img {
+    width: 166px;
+    height: 140px;
+    border-top-right-radius: 20px; /* Sudut kanan atas */
+    border-bottom-right-radius: 20px; /* Sudut kanan bawah */
+}
+
+.edit-hapus{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin-top: 2px;
+    margin-right: 15px;
+}
+.edit-hapus a{
+    color: #0B1765;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline; /* Menambahkan underline */
+    text-decoration-color: #0B1765; /* Mengatur warna underline */
+}
+
+
+
+
+
+.buton-save{
+    text-align: right;
+    margin-top: 40px;
+}
+.save{
+    width: 137px;
+    height: 36px;
+    background-color: #0B1765;
+    color: #FFFFFF;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+   border-radius: 6px;
+   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.continer-popup-add{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+}
+.continer-popup-address{
+    width: 598px;
+    opacity: 0;
+    padding: 30px;
+    background-color: #FFFFFF;
+    margin: auto;
+    position: absolute; /* Required to position elements inside the popup */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(.25);
+    transition: all .5s .1s;
+    
+}
+.container-atas{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+.continer-popup-address h1{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1F2937;
+    margin-bottom: 5px;
+}
+.continer-input{
+    width: 253px;
+    height: 49px;
+    border-radius: 10px;
+    border: 1px solid #6C6C6C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.continer-Address{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #6C6C6C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4B5563;
+}
+textarea::placeholder{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #989a9d;
+}
+.continer-input input{
+    width: 100%;
+    height: 38px;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4B5563;
+}
+.continer-input input::placeholder{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #989a9d;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara checkbox dan teks */
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4B5563; /* Warna teks */
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+}
+.buton{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    gap: 20px;
+}
+.buton-batal,
+.buton-savec{
+    width: 137px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: #AFAFAF;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buton-batal:hover,
+.buton-savec:hover{
+    background-color: #0B1765;
+}
+
+
+
+#continer-popup-add:target{
+    opacity: 1;
+    visibility: visible;
+}
+#continer-popup-add:target .continer-popup-address{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css password */
+.container .container-kanan-pw{
+    width: 730px;
+    box-sizing: border-box; /* Memastikan padding dihitung dalam ukuran total */
+    overflow: hidden; /* Mencegah elemen keluar dari container */
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px;
+}
+.judul-pw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.judul-name-pw{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F2937;
+}
+.old-pw,
+.new-pw,
+.confirm-pw{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.name-old-pw,
+.name-new-pw,
+.name-confirm-pw{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F2937;
+    width: 112px;
+}
+.input-old-pw,
+.input-new-pw,
+.input-confirm-pw {
+    width: 441px;
+    height: 33px;
+    border-radius: 4px;
+    border: 1px solid #F3F4F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.input-old-pw input,
+.input-new-pw input,
+.input-confirm-pw input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1F2937;
+}
+.input-old-pw ::placeholder,
+.input-new-pw ::placeholder,
+.input-confirm-pw ::placeholder{
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #b9bbbe;
+}
+.button-sv-pw{
+    text-align: right;
+    margin-top: 40px;
+}
+.sv-pw{
+    width: 137px;
+    height: 36px;
+    background-color: #0B1765;
+    color: #FFFFFF;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+   border-radius: 6px;
+   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+        gap: 20px;
+    }
+
+    .container .container-kiri, 
+    .container .container-kanan {
+        width: 48%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+        gap: 15px;
+    }
+
+    .container .container-kiri, 
+    .container .container-kanan {
+        width: 47%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container .container-kiri,
+    .container .container-kanan {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+
+    .container .container-kiri,
+    .container .container-kanan {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .profile img, .isi-profile img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        gap: 10px;
+    }
+
+    .container .container-kiri,
+    .container .container-kanan {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile img, .isi-profile img {
+        width: 40px;
+        height: 40px;
+    }
+}
